@@ -87,7 +87,7 @@ def get_cli_args():
         "--downsample",
         type=bool,
         default=True,
-        help="Whether to downsample substrates in MeltingPot. Defaults to 8.",
+        help="Whether to downsample substrates in MeltingPot. Defaults to dwonscaling by 8. Sprite 8x8 becomes 1x1.",
   )
 
   parser.add_argument(

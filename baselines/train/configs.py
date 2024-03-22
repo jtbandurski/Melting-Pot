@@ -2,6 +2,7 @@ from meltingpot import substrate
 from ray.rllib.policy import policy
 from baselines.train import make_envs
 
+# TODO: remove scenarios -- they are not needed -- only substrates are necessary
 SUPPORTED_SCENARIOS = [
     'allelopathic_harvest__open_0',
     'allelopathic_harvest__open_1',
@@ -30,7 +31,13 @@ IGNORE_KEYS = ['WORLD.RGB', 'INTERACTION_INVENTORIES', 'NUM_OTHERS_WHO_CLEANED_T
 
 def get_experiment_config(args, default_config):
     
-    if args.exp == 'pd_arena':
+    if args.exp == 'private':
+        substrate_name = "commons_harvest__private"
+    elif args.exp == 'collective':
+        substrate_name = "commons_harvest__collective"
+    elif args.exp == 'tragedy_test':
+        substrate_name = "commons_harvest__tragedy_test"
+    elif args.exp == 'pd_arena':
         substrate_name = "prisoners_dilemma_in_the_matrix__arena"
     elif args.exp == 'al_harvest':
         substrate_name = "allelopathic_harvest__open"
