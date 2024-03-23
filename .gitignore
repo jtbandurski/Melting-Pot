@@ -1,5 +1,5 @@
-results_train_test
-*/results_train_first_trials
+*/test_train_results/
+*/results_train_first_trials/
 */mpc_main/
 # Byte-compiled / optimized / DLL files
 __pycache__/
