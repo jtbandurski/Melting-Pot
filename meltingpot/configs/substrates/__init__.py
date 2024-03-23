@@ -93,6 +93,7 @@ SUBSTRATES: Set[str] = frozenset({
     'commons_harvest__partnership',
     'commons_harvest__simple',
     'commons_harvest__private',
+    'commons_harvest__tragedy_test',
     'coop_mining',
     'daycare',
     'externality_mushrooms__dense',
