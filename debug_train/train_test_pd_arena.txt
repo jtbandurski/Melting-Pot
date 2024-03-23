@@ -1,0 +1,798 @@
+2024-03-23 15:35:17,737	WARNING deprecation.py:50 -- DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+Running tests under Python 3.10.12: /home/jakub/master_thesis/Melting-Pot/.venv/bin/python
+[ RUN      ] TrainingTests.test_training
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1160: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-35-18_514201_412652/logs/gcs_server.out' mode='a' encoding='utf-8'>
+  self.start_gcs_server()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1160: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-35-18_514201_412652/logs/gcs_server.err' mode='a' encoding='utf-8'>
+  self.start_gcs_server()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1165: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-35-18_514201_412652/logs/monitor.out' mode='a' encoding='utf-8'>
+  self.start_monitor()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1165: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-35-18_514201_412652/logs/monitor.err' mode='a' encoding='utf-8'>
+  self.start_monitor()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1181: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-35-18_514201_412652/logs/dashboard.err' mode='a' encoding='utf-8'>
+  self.start_api_server(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1223: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-35-18_514201_412652/logs/raylet.out' mode='a' encoding='utf-8'>
+  self.start_raylet(plasma_directory, object_store_memory)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1223: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-35-18_514201_412652/logs/raylet.err' mode='a' encoding='utf-8'>
+  self.start_raylet(plasma_directory, object_store_memory)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1225: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-35-18_514201_412652/logs/log_monitor.err' mode='a' encoding='utf-8'>
+  self.start_log_monitor()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+2024-03-23 15:35:21,368	INFO worker.py:1612 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8265 [39m[22m
+2024-03-23 15:35:23,120	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+2024-03-23 15:35:23,124	WARNING algorithm_config.py:2548 -- Setting `exploration_config={'type': 'StochasticSampling'}` because you set `_enable_rl_module_api=False`. This exploration config was restored from a prior exploration config that was overriden when setting `_enable_rl_module_api=True`. This occurs because when RLModule API are enabled, exploration_config can not be set.
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/air/config.py:803: UserWarning: Setting a `RunConfig.local_dir` is deprecated and will be removed in the future. If you are not using remote storage,set the `RunConfig.storage_path` instead. Otherwise, set the`RAY_AIR_LOCAL_CACHE_DIR` environment variable to control the local cache location.
+  warnings.warn(
+2024-03-23 15:35:23,540	WARNING deprecation.py:50 -- DeprecationWarning: `build_tf_policy` has been deprecated. This will raise an error in the future!
+2024-03-23 15:35:23,547	WARNING deprecation.py:50 -- DeprecationWarning: `build_policy_class` has been deprecated. This will raise an error in the future!
+2024-03-23 15:35:23,607	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/gymnasium/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:141: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+2024-03-23 15:35:23,703	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+2024-03-23 15:35:23,739	INFO tune.py:666 -- [output] This will use the new output engine with verbosity 0. To disable the new output and use the legacy output engine, set the environment variable RAY_AIR_NEW_OUTPUT=0. For more information, please see https://github.com/ray-project/ray/issues/36949
+2024-03-23 15:35:23,833	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+2024-03-23 15:35:23,834	WARNING algorithm_config.py:2548 -- Setting `exploration_config={'type': 'StochasticSampling'}` because you set `_enable_rl_module_api=False`. This exploration config was restored from a prior exploration config that was overriden when setting `_enable_rl_module_api=True`. This occurs because when RLModule API are enabled, exploration_config can not be set.
+2024-03-23 15:35:23,834	WARNING algorithm_config.py:656 -- Cannot create PPOConfig from given `config_dict`! Property fcnet_hiddens not supported.
+[2m[36m(pid=413270)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:35:31,491	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:35:31,492	WARNING algorithm_config.py:2548 -- Setting `exploration_config={'type': 'StochasticSampling'}` because you set `_enable_rl_module_api=False`. This exploration config was restored from a prior exploration config that was overriden when setting `_enable_rl_module_api=True`. This occurs because when RLModule API are enabled, exploration_config can not be set.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:35:31,492	WARNING algorithm_config.py:656 -- Cannot create PPOConfig from given `config_dict`! Property fcnet_hiddens not supported.
+[2m[36m(pid=413460)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m /home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/gymnasium/spaces/box.py:227: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=413460)[0m   logger.warn("Casting input x to numpy array.")
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,493	DEBUG rollout_worker.py:1761 -- Creating policy for agent_0
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,493	DEBUG rollout_worker.py:1761 -- Creating policy for agent_1
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,493	DEBUG rollout_worker.py:1761 -- Creating policy for agent_2
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,493	DEBUG rollout_worker.py:1761 -- Creating policy for agent_3
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,493	DEBUG rollout_worker.py:1761 -- Creating policy for agent_4
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,493	DEBUG rollout_worker.py:1761 -- Creating policy for agent_5
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,493	DEBUG rollout_worker.py:1761 -- Creating policy for agent_6
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,494	DEBUG rollout_worker.py:1761 -- Creating policy for agent_7
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,545	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.recurrent_net.LSTMWrapper` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,545	WARNING deprecation.py:50 -- DeprecationWarning: `rllib.models.tf.ComplexInputNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,545	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.tf_modelv2.TFModelV2` has been deprecated. Use `ray.rllib.core.rl_module.RLModule` instead. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,546	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.fcnet.FullyConnectedNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,768	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.misc.normc_initializer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:39,999	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.visionnet.VisionNetwork` has been deprecated. Use `ray.rllib.core.rl_module.RLModule` instead. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:41,405	WARNING deprecation.py:50 -- DeprecationWarning: `StochasticSampling` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:41,405	WARNING deprecation.py:50 -- DeprecationWarning: `Exploration` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:41,405	WARNING deprecation.py:50 -- DeprecationWarning: `Random` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:41,611	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.recurrent_net.RecurrentNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:41,796	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.tf_action_dist.Categorical` has been deprecated. Use `ray.rllib.models.tf.tf_distributions.Categorical` instead. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:41,798	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.tf_action_dist.TFActionDistribution` has been deprecated. Use `ray.rllib.models.tf.tf_distributions.TfDistribution` instead. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:41,849	WARNING deprecation.py:50 -- DeprecationWarning: `TFPolicy` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:41,850	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:41,851	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:41,865	WARNING deprecation.py:50 -- DeprecationWarning: `ValueNetworkMixin` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:41,865	WARNING deprecation.py:50 -- DeprecationWarning: `EntropyCoeffSchedule` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:41,870	WARNING deprecation.py:50 -- DeprecationWarning: `LearningRateSchedule` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:41,874	WARNING deprecation.py:50 -- DeprecationWarning: `KLCoeffMixin` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:42,079	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:42,080	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:42,081	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:42,082	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:42,082	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:42,812	DEBUG dynamic_tf_policy_v2.py:756 -- Initializing loss function with dummy input:
+[2m[36m(RolloutWorker pid=413460)[0m 
+[2m[36m(RolloutWorker pid=413460)[0m { 'action_dist_inputs': <tf.Tensor 'agent_0_wk1/action_dist_inputs:0' shape=(?, 8) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'action_logp': <tf.Tensor 'agent_0_wk1/action_logp:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'action_prob': <tf.Tensor 'agent_0_wk1/action_prob:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'actions': <tf.Tensor 'agent_0_wk1/actions:0' shape=(?,) dtype=int64>,
+[2m[36m(RolloutWorker pid=413460)[0m   'advantages': <tf.Tensor 'agent_0_wk1/advantages:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'agent_index': <tf.Tensor 'agent_0_wk1/agent_index:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'eps_id': <tf.Tensor 'agent_0_wk1/eps_id:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'new_obs': { 'COLLECTIVE_REWARD': <tf.Tensor 'agent_0_wk1/new_obs.COLLECTIVE_REWARD:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m                'INVENTORY': <tf.Tensor 'agent_0_wk1/new_obs.INVENTORY:0' shape=(?, 2) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m                'READY_TO_SHOOT': <tf.Tensor 'agent_0_wk1/new_obs.READY_TO_SHOOT:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m                'RGB': <tf.Tensor 'agent_0_wk1/new_obs.RGB:0' shape=(?, 11, 11, 3) dtype=uint8>},
+[2m[36m(RolloutWorker pid=413460)[0m   'obs': { 'COLLECTIVE_REWARD': <tf.Tensor 'agent_0_wk1/obs.COLLECTIVE_REWARD:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m            'INVENTORY': <tf.Tensor 'agent_0_wk1/obs.INVENTORY:0' shape=(?, 2) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m            'READY_TO_SHOOT': <tf.Tensor 'agent_0_wk1/obs.READY_TO_SHOOT:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m            'RGB': <tf.Tensor 'agent_0_wk1/obs.RGB:0' shape=(?, 11, 11, 3) dtype=uint8>},
+[2m[36m(RolloutWorker pid=413460)[0m   'prev_actions': <tf.Tensor 'agent_0_wk1/prev_actions:0' shape=(?,) dtype=int64>,
+[2m[36m(RolloutWorker pid=413460)[0m   'prev_rewards': <tf.Tensor 'agent_0_wk1/prev_rewards:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'rewards': <tf.Tensor 'agent_0_wk1/rewards:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'seq_lens': <tf.Tensor 'agent_0_wk1/seq_lens:0' shape=(?,) dtype=int32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'state_in_0': <tf.Tensor 'agent_0_wk1/state_in_0:0' shape=(?, 2) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'state_in_1': <tf.Tensor 'agent_0_wk1/state_in_1:0' shape=(?, 2) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   't': <tf.Tensor 'agent_0_wk1/t:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'terminateds': <tf.Tensor 'agent_0_wk1/terminateds:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'truncateds': <tf.Tensor 'agent_0_wk1/truncateds:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'unroll_id': <tf.Tensor 'agent_0_wk1/unroll_id:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'value_targets': <tf.Tensor 'agent_0_wk1/value_targets:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'values_bootstrapped': <tf.Tensor 'agent_0_wk1/values_bootstrapped:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'vf_preds': <tf.Tensor 'agent_0_wk1/vf_preds:0' shape=(?,) dtype=float32>}
+[2m[36m(RolloutWorker pid=413460)[0m 
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:45,441	DEBUG tf_policy.py:784 -- These tensors were used in the loss functions:
+[2m[36m(RolloutWorker pid=413460)[0m { 'action_dist_inputs': <tf.Tensor 'agent_0_wk1/action_dist_inputs:0' shape=(?, 8) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'action_logp': <tf.Tensor 'agent_0_wk1/action_logp:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'action_prob': <tf.Tensor 'agent_0_wk1/action_prob:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'actions': <tf.Tensor 'agent_0_wk1/actions:0' shape=(?,) dtype=int64>,
+[2m[36m(RolloutWorker pid=413460)[0m   'advantages': <tf.Tensor 'agent_0_wk1/advantages:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'new_obs': { 'COLLECTIVE_REWARD': <tf.Tensor 'agent_0_wk1/new_obs.COLLECTIVE_REWARD:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m                'INVENTORY': <tf.Tensor 'agent_0_wk1/new_obs.INVENTORY:0' shape=(?, 2) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m                'READY_TO_SHOOT': <tf.Tensor 'agent_0_wk1/new_obs.READY_TO_SHOOT:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m                'RGB': <tf.Tensor 'agent_0_wk1/new_obs.RGB:0' shape=(?, 11, 11, 3) dtype=uint8>},
+[2m[36m(RolloutWorker pid=413460)[0m   'obs': { 'COLLECTIVE_REWARD': <tf.Tensor 'agent_0_wk1/obs.COLLECTIVE_REWARD:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m            'INVENTORY': <tf.Tensor 'agent_0_wk1/obs.INVENTORY:0' shape=(?, 2) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m            'READY_TO_SHOOT': <tf.Tensor 'agent_0_wk1/obs.READY_TO_SHOOT:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m            'RGB': <tf.Tensor 'agent_0_wk1/obs.RGB:0' shape=(?, 11, 11, 3) dtype=uint8>},
+[2m[36m(RolloutWorker pid=413460)[0m   'prev_actions': <tf.Tensor 'agent_0_wk1/prev_actions:0' shape=(?,) dtype=int64>,
+[2m[36m(RolloutWorker pid=413460)[0m   'rewards': <tf.Tensor 'agent_0_wk1/rewards:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'seq_lens': <tf.Tensor 'agent_0_wk1/seq_lens:0' shape=(?,) dtype=int32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'state_in_0': <tf.Tensor 'agent_0_wk1/state_in_0:0' shape=(?, 2) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'state_in_1': <tf.Tensor 'agent_0_wk1/state_in_1:0' shape=(?, 2) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'terminateds': <tf.Tensor 'agent_0_wk1/terminateds:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'value_targets': <tf.Tensor 'agent_0_wk1/value_targets:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'values_bootstrapped': <tf.Tensor 'agent_0_wk1/values_bootstrapped:0' shape=(?,) dtype=float32>,
+[2m[36m(RolloutWorker pid=413460)[0m   'vf_preds': <tf.Tensor 'agent_0_wk1/vf_preds:0' shape=(?,) dtype=float32>}
+[2m[36m(RolloutWorker pid=413460)[0m 
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:48,442	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:48,442	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:48,673	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:48,674	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:48,675	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:48,676	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:48,676	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:53,691	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:53,691	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:53,868	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:53,869	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:53,870	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:53,871	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:53,871	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:59,768	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:35:59,768	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:00,058	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:00,059	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:00,060	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:00,061	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:00,062	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:05,802	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:05,802	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:05,988	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:05,989	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:05,990	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:05,991	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:05,991	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:11,475	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:11,475	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:11,695	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:11,697	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:11,698	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:11,698	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:11,699	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:17,216	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:17,216	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:17,454	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:17,455	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:17,456	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:17,457	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:17,457	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:23,176	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:23,177	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:23,422	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:23,423	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:23,424	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:23,425	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:23,426	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:26,967	INFO worker_set.py:297 -- Inferred observation/action spaces from remote worker (local worker has no env): {'agent_5': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_4': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_2': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_6': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_3': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_0': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_7': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_1': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), '__env__': (Dict('player_0': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_1': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_2': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_3': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_4': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_5': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_6': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_7': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8))), Dict('player_0': Discrete(8), 'player_1': Discrete(8), 'player_2': Discrete(8), 'player_3': Discrete(8), 'player_4': Discrete(8), 'player_5': Discrete(8), 'player_6': Discrete(8), 'player_7': Discrete(8)))}
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,942	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,942	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,942	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=413460)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,943	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,943	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,943	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=413460)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,943	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,943	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,943	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=413460)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,943	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,943	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,944	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=413460)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,945	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,945	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,945	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=413460)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,945	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,945	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,945	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=413460)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,945	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,945	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,945	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=413460)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,946	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,946	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,946	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=413460)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=413460)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:36:26,947	DEBUG rollout_worker.py:645 -- Created rollout worker with env <ray.rllib.env.multi_agent_env.MultiAgentEnvWrapper object at 0x7f902b210f40> (<MeltingPotEnv instance>), policies <PolicyMap lru-caching-capacity=100 policy-IDs=['agent_5', 'agent_4', 'agent_2', 'agent_6', 'agent_3', 'agent_0', 'agent_7', 'agent_1']>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,007	DEBUG rollout_worker.py:1761 -- Creating policy for agent_0
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,008	DEBUG rollout_worker.py:1761 -- Creating policy for agent_1
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,008	DEBUG rollout_worker.py:1761 -- Creating policy for agent_2
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,008	DEBUG rollout_worker.py:1761 -- Creating policy for agent_3
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,008	DEBUG rollout_worker.py:1761 -- Creating policy for agent_4
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,008	DEBUG rollout_worker.py:1761 -- Creating policy for agent_5
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,008	DEBUG rollout_worker.py:1761 -- Creating policy for agent_6
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,008	DEBUG rollout_worker.py:1761 -- Creating policy for agent_7
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,023	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.recurrent_net.LSTMWrapper` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,023	WARNING deprecation.py:50 -- DeprecationWarning: `rllib.models.tf.ComplexInputNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,023	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.tf_modelv2.TFModelV2` has been deprecated. Use `ray.rllib.core.rl_module.RLModule` instead. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,025	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.fcnet.FullyConnectedNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,229	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.misc.normc_initializer` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:27,457	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.visionnet.VisionNetwork` has been deprecated. Use `ray.rllib.core.rl_module.RLModule` instead. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,290	WARNING deprecation.py:50 -- DeprecationWarning: `StochasticSampling` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,290	WARNING deprecation.py:50 -- DeprecationWarning: `Exploration` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,290	WARNING deprecation.py:50 -- DeprecationWarning: `Random` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,416	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.recurrent_net.RecurrentNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,572	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.tf_action_dist.Categorical` has been deprecated. Use `ray.rllib.models.tf.tf_distributions.Categorical` instead. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,574	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.tf_action_dist.TFActionDistribution` has been deprecated. Use `ray.rllib.models.tf.tf_distributions.TfDistribution` instead. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,613	WARNING deprecation.py:50 -- DeprecationWarning: `TFPolicy` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,614	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,614	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,623	WARNING deprecation.py:50 -- DeprecationWarning: `ValueNetworkMixin` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,623	WARNING deprecation.py:50 -- DeprecationWarning: `EntropyCoeffSchedule` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,627	WARNING deprecation.py:50 -- DeprecationWarning: `LearningRateSchedule` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,631	WARNING deprecation.py:50 -- DeprecationWarning: `KLCoeffMixin` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,893	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,894	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,895	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,896	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:28,896	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:29,425	DEBUG dynamic_tf_policy_v2.py:756 -- Initializing loss function with dummy input:
+[2m[36m(PPO pid=413270)[0m 
+[2m[36m(PPO pid=413270)[0m { 'action_dist_inputs': <tf.Tensor 'agent_0/action_dist_inputs:0' shape=(?, 8) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'action_logp': <tf.Tensor 'agent_0/action_logp:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'action_prob': <tf.Tensor 'agent_0/action_prob:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'actions': <tf.Tensor 'agent_0/actions:0' shape=(?,) dtype=int64>,
+[2m[36m(PPO pid=413270)[0m   'advantages': <tf.Tensor 'agent_0/advantages:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'agent_index': <tf.Tensor 'agent_0/agent_index:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'eps_id': <tf.Tensor 'agent_0/eps_id:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'new_obs': { 'COLLECTIVE_REWARD': <tf.Tensor 'agent_0/new_obs.COLLECTIVE_REWARD:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m                'INVENTORY': <tf.Tensor 'agent_0/new_obs.INVENTORY:0' shape=(?, 2) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m                'READY_TO_SHOOT': <tf.Tensor 'agent_0/new_obs.READY_TO_SHOOT:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m                'RGB': <tf.Tensor 'agent_0/new_obs.RGB:0' shape=(?, 11, 11, 3) dtype=uint8>},
+[2m[36m(PPO pid=413270)[0m   'obs': { 'COLLECTIVE_REWARD': <tf.Tensor 'agent_0/obs.COLLECTIVE_REWARD:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m            'INVENTORY': <tf.Tensor 'agent_0/obs.INVENTORY:0' shape=(?, 2) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m            'READY_TO_SHOOT': <tf.Tensor 'agent_0/obs.READY_TO_SHOOT:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m            'RGB': <tf.Tensor 'agent_0/obs.RGB:0' shape=(?, 11, 11, 3) dtype=uint8>},
+[2m[36m(PPO pid=413270)[0m   'prev_actions': <tf.Tensor 'agent_0/prev_actions:0' shape=(?,) dtype=int64>,
+[2m[36m(PPO pid=413270)[0m   'prev_rewards': <tf.Tensor 'agent_0/prev_rewards:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'rewards': <tf.Tensor 'agent_0/rewards:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'seq_lens': <tf.Tensor 'agent_0/seq_lens:0' shape=(?,) dtype=int32>,
+[2m[36m(PPO pid=413270)[0m   'state_in_0': <tf.Tensor 'agent_0/state_in_0:0' shape=(?, 2) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'state_in_1': <tf.Tensor 'agent_0/state_in_1:0' shape=(?, 2) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   't': <tf.Tensor 'agent_0/t:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'terminateds': <tf.Tensor 'agent_0/terminateds:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'truncateds': <tf.Tensor 'agent_0/truncateds:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'unroll_id': <tf.Tensor 'agent_0/unroll_id:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'value_targets': <tf.Tensor 'agent_0/value_targets:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'values_bootstrapped': <tf.Tensor 'agent_0/values_bootstrapped:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'vf_preds': <tf.Tensor 'agent_0/vf_preds:0' shape=(?,) dtype=float32>}
+[2m[36m(PPO pid=413270)[0m 
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:31,357	DEBUG tf_policy.py:784 -- These tensors were used in the loss functions:
+[2m[36m(PPO pid=413270)[0m { 'action_dist_inputs': <tf.Tensor 'agent_0/action_dist_inputs:0' shape=(?, 8) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'action_logp': <tf.Tensor 'agent_0/action_logp:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'action_prob': <tf.Tensor 'agent_0/action_prob:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'actions': <tf.Tensor 'agent_0/actions:0' shape=(?,) dtype=int64>,
+[2m[36m(PPO pid=413270)[0m   'advantages': <tf.Tensor 'agent_0/advantages:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'new_obs': { 'COLLECTIVE_REWARD': <tf.Tensor 'agent_0/new_obs.COLLECTIVE_REWARD:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m                'INVENTORY': <tf.Tensor 'agent_0/new_obs.INVENTORY:0' shape=(?, 2) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m                'READY_TO_SHOOT': <tf.Tensor 'agent_0/new_obs.READY_TO_SHOOT:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m                'RGB': <tf.Tensor 'agent_0/new_obs.RGB:0' shape=(?, 11, 11, 3) dtype=uint8>},
+[2m[36m(PPO pid=413270)[0m   'obs': { 'COLLECTIVE_REWARD': <tf.Tensor 'agent_0/obs.COLLECTIVE_REWARD:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m            'INVENTORY': <tf.Tensor 'agent_0/obs.INVENTORY:0' shape=(?, 2) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m            'READY_TO_SHOOT': <tf.Tensor 'agent_0/obs.READY_TO_SHOOT:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m            'RGB': <tf.Tensor 'agent_0/obs.RGB:0' shape=(?, 11, 11, 3) dtype=uint8>},
+[2m[36m(PPO pid=413270)[0m   'prev_actions': <tf.Tensor 'agent_0/prev_actions:0' shape=(?,) dtype=int64>,
+[2m[36m(PPO pid=413270)[0m   'rewards': <tf.Tensor 'agent_0/rewards:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'seq_lens': <tf.Tensor 'agent_0/seq_lens:0' shape=(?,) dtype=int32>,
+[2m[36m(PPO pid=413270)[0m   'state_in_0': <tf.Tensor 'agent_0/state_in_0:0' shape=(?, 2) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'state_in_1': <tf.Tensor 'agent_0/state_in_1:0' shape=(?, 2) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'terminateds': <tf.Tensor 'agent_0/terminateds:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'value_targets': <tf.Tensor 'agent_0/value_targets:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'values_bootstrapped': <tf.Tensor 'agent_0/values_bootstrapped:0' shape=(?,) dtype=float32>,
+[2m[36m(PPO pid=413270)[0m   'vf_preds': <tf.Tensor 'agent_0/vf_preds:0' shape=(?,) dtype=float32>}
+[2m[36m(PPO pid=413270)[0m 
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:33,537	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:33,537	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:33,690	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:33,691	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:33,692	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:33,693	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:33,693	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:38,674	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:38,674	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:38,953	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:38,954	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:38,955	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:38,956	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:38,956	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:44,038	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:44,038	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:44,202	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:44,202	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:44,203	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:44,204	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:44,204	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:48,382	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:48,382	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:48,515	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:48,516	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:48,517	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:48,518	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:48,518	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:52,217	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:52,217	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:52,380	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:52,381	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:52,382	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:52,382	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:52,382	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:56,157	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:56,157	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:56,298	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:56,300	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:56,301	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:56,302	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:36:56,302	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:00,232	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:00,232	INFO tf_policy.py:171 -- Found 0 visible cuda devices.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:00,380	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_prob` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:00,381	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_logp` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:00,382	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `action_dist_inputs` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:00,383	INFO dynamic_tf_policy_v2.py:710 -- Adding extra-action-fetch `vf_preds` to view-reqs.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:00,383	INFO dynamic_tf_policy_v2.py:722 -- Testing `postprocess_trajectory` w/ dummy batch.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,311	INFO util.py:118 -- Using connectors:
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,311	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         StateBufferConnector
+[2m[36m(PPO pid=413270)[0m         ViewRequirementAgentConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,311	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         ConvertToNumpyConnector
+[2m[36m(PPO pid=413270)[0m         NormalizeActionsConnector
+[2m[36m(PPO pid=413270)[0m         ImmutableActionsConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,311	INFO util.py:118 -- Using connectors:
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,311	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         StateBufferConnector
+[2m[36m(PPO pid=413270)[0m         ViewRequirementAgentConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,311	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         ConvertToNumpyConnector
+[2m[36m(PPO pid=413270)[0m         NormalizeActionsConnector
+[2m[36m(PPO pid=413270)[0m         ImmutableActionsConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,312	INFO util.py:118 -- Using connectors:
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,312	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         StateBufferConnector
+[2m[36m(PPO pid=413270)[0m         ViewRequirementAgentConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,312	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         ConvertToNumpyConnector
+[2m[36m(PPO pid=413270)[0m         NormalizeActionsConnector
+[2m[36m(PPO pid=413270)[0m         ImmutableActionsConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,312	INFO util.py:118 -- Using connectors:
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,312	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         StateBufferConnector
+[2m[36m(PPO pid=413270)[0m         ViewRequirementAgentConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,312	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         ConvertToNumpyConnector
+[2m[36m(PPO pid=413270)[0m         NormalizeActionsConnector
+[2m[36m(PPO pid=413270)[0m         ImmutableActionsConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,312	INFO util.py:118 -- Using connectors:
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,312	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         StateBufferConnector
+[2m[36m(PPO pid=413270)[0m         ViewRequirementAgentConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,312	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         ConvertToNumpyConnector
+[2m[36m(PPO pid=413270)[0m         NormalizeActionsConnector
+[2m[36m(PPO pid=413270)[0m         ImmutableActionsConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,312	INFO util.py:118 -- Using connectors:
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,312	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         StateBufferConnector
+[2m[36m(PPO pid=413270)[0m         ViewRequirementAgentConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,313	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         ConvertToNumpyConnector
+[2m[36m(PPO pid=413270)[0m         NormalizeActionsConnector
+[2m[36m(PPO pid=413270)[0m         ImmutableActionsConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,313	INFO util.py:118 -- Using connectors:
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,313	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         StateBufferConnector
+[2m[36m(PPO pid=413270)[0m         ViewRequirementAgentConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,313	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         ConvertToNumpyConnector
+[2m[36m(PPO pid=413270)[0m         NormalizeActionsConnector
+[2m[36m(PPO pid=413270)[0m         ImmutableActionsConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,313	INFO util.py:118 -- Using connectors:
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,313	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         StateBufferConnector
+[2m[36m(PPO pid=413270)[0m         ViewRequirementAgentConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,313	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(PPO pid=413270)[0m         ConvertToNumpyConnector
+[2m[36m(PPO pid=413270)[0m         NormalizeActionsConnector
+[2m[36m(PPO pid=413270)[0m         ImmutableActionsConnector
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,313	INFO rollout_worker.py:1742 -- Built policy map: <PolicyMap lru-caching-capacity=100 policy-IDs=['agent_0', 'agent_7', 'agent_1', 'agent_3', 'agent_4', 'agent_2', 'agent_5', 'agent_6']>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,313	INFO rollout_worker.py:1743 -- Built preprocessor map: {'agent_0': None, 'agent_1': None, 'agent_2': None, 'agent_3': None, 'agent_4': None, 'agent_5': None, 'agent_6': None, 'agent_7': None}
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,313	INFO rollout_worker.py:550 -- Built filter map: defaultdict(<class 'ray.rllib.utils.filter.NoFilter'>, {})
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:03,314	DEBUG rollout_worker.py:645 -- Created rollout worker with env None (None), policies <PolicyMap lru-caching-capacity=100 policy-IDs=['agent_0', 'agent_7', 'agent_1', 'agent_3', 'agent_4', 'agent_2', 'agent_5', 'agent_6']>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:04,089	INFO algorithm_config.py:3654 -- Your framework setting is 'tf', meaning you are using static-graph mode. Set framework='tf2' to enable eager execution with tf2.x. You may also then want to set eager_tracing=True in order to reach similar execution speed as with static-graph mode.
+[2m[36m(PPO pid=413270)[0m Trainable.setup took 92.482 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+[2m[36m(PPO pid=413270)[0m Install gputil for GPU system monitoring.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:37:04,920	INFO rollout_worker.py:690 -- Generating sample batch of size 10
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:37:05,336	INFO tf_run_builder.py:108 -- Executing TF run without tracing. To dump TF timeline traces to disk, set the TF_TIMELINE_DIR environment variable.
+[2m[36m(RolloutWorker pid=413460)[0m 2024-03-23 15:37:06,909	INFO rollout_worker.py:732 -- Completed sample batch:
+[2m[36m(RolloutWorker pid=413460)[0m 
+[2m[36m(RolloutWorker pid=413460)[0m { 'count': 10,
+[2m[36m(RolloutWorker pid=413460)[0m   'policy_batches': { 'agent_0': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.278, max=0.237, mean=0.01),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.098, max=-1.873, mean=-2.007),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=4.2),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.433, max=0.05, mean=-0.19),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.7),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=15.34)},
+[2m[36m(RolloutWorker pid=413460)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.8),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.361, max=0.194, mean=-0.088),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-0.713, max=0.718, mean=-0.197),
+[2m[36m(RolloutWorker pid=413460)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=-0.444, max=-0.405, mean=-0.424)},
+[2m[36m(RolloutWorker pid=413460)[0m                       'agent_1': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.694, max=0.748, mean=-0.017),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.364, max=-1.491, mean=-1.888),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=4.3),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.617, max=0.903, mean=0.246),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.7),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=22.537)},
+[2m[36m(RolloutWorker pid=413460)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.9),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.9, max=-0.001, mean=-0.392),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-2.264, max=-0.101, mean=-1.287),
+[2m[36m(RolloutWorker pid=413460)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=3.0, max=3.0, mean=3.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=-0.733, max=-0.669, mean=-0.701)},
+[2m[36m(RolloutWorker pid=413460)[0m                       'agent_2': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.401, max=0.443, mean=0.046),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.545, max=-1.846, mean=-2.122),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.8),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.131, max=0.637, mean=0.265),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=2.0, max=2.0, mean=2.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.7),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=21.674)},
+[2m[36m(RolloutWorker pid=413460)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.5),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.071, max=0.727, mean=0.19),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-0.088, max=1.705, mean=0.556),
+[2m[36m(RolloutWorker pid=413460)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=5.0, max=5.0, mean=5.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=0.633, max=0.693, mean=0.662)},
+[2m[36m(RolloutWorker pid=413460)[0m                       'agent_3': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.419, max=0.463, mean=0.044),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.389, max=-1.828, mean=-2.067),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.9),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.427, max=0.32, mean=-0.034),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=3.0, max=3.0, mean=3.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.85),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=18.958)},
+[2m[36m(RolloutWorker pid=413460)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.6),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.007, max=0.76, mean=0.194),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-0.012, max=1.46, mean=0.583),
+[2m[36m(RolloutWorker pid=413460)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=7.0, max=7.0, mean=7.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=0.359, max=0.393, mean=0.376)},
+[2m[36m(RolloutWorker pid=413460)[0m                       'agent_4': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.117, max=0.125, mean=0.002),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.217, max=-2.053, mean=-2.091),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=4.2),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.235, max=0.147, mean=-0.016),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=4.0, max=4.0, mean=4.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.7),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=19.239)},
+[2m[36m(RolloutWorker pid=413460)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.8),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.131, max=0.186, mean=0.026),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-0.296, max=1.07, mean=0.143),
+[2m[36m(RolloutWorker pid=413460)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=9.0, max=9.0, mean=9.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=0.044, max=0.048, mean=0.046)},
+[2m[36m(RolloutWorker pid=413460)[0m                       'agent_5': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.326, max=0.37, mean=0.033),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.411, max=-1.888, mean=-2.121),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=4.1),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.291, max=0.299, mean=0.078),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=5.0, max=5.0, mean=5.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.7),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=21.949)},
+[2m[36m(RolloutWorker pid=413460)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.7),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.096, max=0.596, mean=0.12),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-0.274, max=4.705, mean=1.287),
+[2m[36m(RolloutWorker pid=413460)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=11.0, max=11.0, mean=11.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=0.308, max=0.337, mean=0.322)},
+[2m[36m(RolloutWorker pid=413460)[0m                       'agent_6': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.143, max=0.126, mean=0.001),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.147, max=-1.965, mean=-2.059),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=4.2),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.072, max=0.185, mean=0.024),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=6.0, max=6.0, mean=6.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.7),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=23.12)},
+[2m[36m(RolloutWorker pid=413460)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.8),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.187, max=0.004, mean=-0.04),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-0.523, max=0.484, mean=-0.108),
+[2m[36m(RolloutWorker pid=413460)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=13.0, max=13.0, mean=13.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=-0.08, max=-0.073, mean=-0.077)},
+[2m[36m(RolloutWorker pid=413460)[0m                       'agent_7': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.419, max=0.459, mean=0.064),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.524, max=-1.784, mean=-2.115),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.8),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.706, max=-0.006, mean=-0.501),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=7.0, max=7.0, mean=7.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.7),
+[2m[36m(RolloutWorker pid=413460)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=17.317)},
+[2m[36m(RolloutWorker pid=413460)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.5),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.0, max=0.757, mean=0.286),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-0.0, max=1.16, mean=0.492),
+[2m[36m(RolloutWorker pid=413460)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=15.0, max=15.0, mean=15.0),
+[2m[36m(RolloutWorker pid=413460)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=0.1, max=0.11, mean=0.105)}},
+[2m[36m(RolloutWorker pid=413460)[0m   'type': 'MultiAgentBatch'}
+[2m[36m(RolloutWorker pid=413460)[0m 
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,345	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.execution.train_ops.train_one_step` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,345	WARNING deprecation.py:50 -- DeprecationWarning: `_get_slice_indices` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,347	INFO rollout_worker.py:786 -- Training on concatenated sample batches:
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_1/kernel:0' shape=(1, 4) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_1/bias:0' shape=(4,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_2/kernel:0' shape=(4, 4) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_2/bias:0' shape=(4,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_1_1/kernel:0' shape=(2, 4) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_1_1/bias:0' shape=(4,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_2_1/kernel:0' shape=(4, 4) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_2_1/bias:0' shape=(4,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_1_2/kernel:0' shape=(1, 4) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_1_2/bias:0' shape=(4,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_2_2/kernel:0' shape=(4, 4) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_2_2/bias:0' shape=(4,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/conv1/kernel:0' shape=(8, 8, 3, 16) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/conv1/bias:0' shape=(16,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/conv2/kernel:0' shape=(11, 11, 16, 128) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/conv2/bias:0' shape=(128,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_1_3/kernel:0' shape=(140, 16) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/fc_1_3/bias:0' shape=(16,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/lstm/lstm_cell/kernel:0' shape=(24, 8) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/lstm/lstm_cell/recurrent_kernel:0' shape=(2, 8) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/lstm/lstm_cell/bias:0' shape=(8,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/logits/kernel:0' shape=(2, 8) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/logits/bias:0' shape=(8,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,348	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/values/kernel:0' shape=(2, 1) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,349	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_7/values/bias:0' shape=(1,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,350	INFO rnn_sequencing.py:178 -- Padded input for RNN/Attn.Nets/MA:
+[2m[36m(PPO pid=413270)[0m { 'features': [ [ np.ndarray((40,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=7.0, mean=2.725)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=7.0, mean=2.55)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=float32, min=0.0, max=0.0, mean=0.0)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=bool, min=0.0, max=0.0, mean=0.0)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=float32, min=-2.616, max=0.0, mean=-1.718)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40, 8), dtype=float32, min=-0.42, max=0.468, mean=0.041)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=float32, min=-2.078, max=1.917, mean=-0.263)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=float32, min=0.0, max=0.602, mean=0.207)]],
+[2m[36m(PPO pid=413270)[0m   'initial_states': [ np.ndarray((4, 2), dtype=float32, min=-0.015, max=0.737, mean=0.209),
+[2m[36m(PPO pid=413270)[0m   'max_seq_len': 20,
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:20,350	INFO tf_run_builder.py:108 -- Executing TF run without tracing. To dump TF timeline traces to disk, set the TF_TIMELINE_DIR environment variable.
+[2m[36m(PPO pid=413270)[0m [32m [repeated 12x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/ray-logging.html#log-deduplication for more options.)[0m
+[2m[36m(PPO pid=413270)[0m { 'count': 32,
+[2m[36m(PPO pid=413270)[0m   'policy_batches': { 'agent_7': { 'action_dist_inputs': np.ndarray((32, 8), dtype=float32, min=-0.42, max=0.468, mean=0.052),
+[2m[36m(PPO pid=413270)[0m                                    'action_logp': np.ndarray((32,), dtype=float32, min=-2.616, max=-1.768, mean=-2.148),
+[2m[36m(PPO pid=413270)[0m                                    'actions': np.ndarray((32,), dtype=int64, min=0.0, max=7.0, mean=3.406),
+[2m[36m(PPO pid=413270)[0m                                    'advantages': np.ndarray((32,), dtype=float32, min=-2.078, max=1.917, mean=-0.329),
+[2m[36m(PPO pid=413270)[0m                                    'agent_index': np.ndarray((32,), dtype=int64, min=7.0, max=7.0, mean=7.0),
+[2m[36m(PPO pid=413270)[0m                                    'eps_id': np.ndarray((32,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(PPO pid=413270)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((32,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=413270)[0m                                             'INVENTORY': np.ndarray((32, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(PPO pid=413270)[0m                                             'READY_TO_SHOOT': np.ndarray((32,), dtype=float32, min=0.0, max=1.0, mean=0.812),
+[2m[36m(PPO pid=413270)[0m                                             'RGB': np.ndarray((32, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=16.677)},
+[2m[36m(PPO pid=413270)[0m                                    'prev_actions': np.ndarray((32,), dtype=int64, min=0.0, max=7.0, mean=3.188),
+[2m[36m(PPO pid=413270)[0m                                    'rewards': np.ndarray((32,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=413270)[0m   'seq_lens': np.ndarray((4,), dtype=int32, min=2.0, max=10.0, mean=8.0)}[32m [repeated 2x across cluster][0m
+[2m[36m(PPO pid=413270)[0m                                    't': np.ndarray((32,), dtype=int64, min=240.0, max=271.0, mean=255.5),
+[2m[36m(PPO pid=413270)[0m                                    'terminateds': np.ndarray((32,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=413270)[0m                                    'truncateds': np.ndarray((32,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=413270)[0m                                    'unroll_id': np.ndarray((32,), dtype=int64, min=207.0, max=231.0, mean=216.0),
+[2m[36m(PPO pid=413270)[0m                                    'value_targets': np.ndarray((32,), dtype=float32, min=0.044, max=0.602, mean=0.259)}},
+[2m[36m(PPO pid=413270)[0m   'type': 'MultiAgentBatch'}
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:37:21,120	DEBUG rollout_worker.py:825 -- Training out:
+[2m[36m(PPO pid=413270)[0m { 'agent_7': { 'learner_stats': { 'cur_kl_coeff': 0.20000000298023224,
+[2m[36m(PPO pid=413270)[0m                                   'cur_lr': 4.999999873689376e-05,
+[2m[36m(PPO pid=413270)[0m                                   'entropy': 2.0554438,
+[2m[36m(PPO pid=413270)[0m                                   'entropy_coeff': 0.0,
+[2m[36m(PPO pid=413270)[0m                                   'kl': -7.3627717e-09,
+[2m[36m(PPO pid=413270)[0m                                   'model': {},
+[2m[36m(PPO pid=413270)[0m                                   'policy_loss': 0.32902023,
+[2m[36m(PPO pid=413270)[0m                                   'total_loss': 0.56257474,
+[2m[36m(PPO pid=413270)[0m                                   'vf_explained_var': -1.0,
+[2m[36m(PPO pid=413270)[0m                                   'vf_loss': 0.2335546}}}
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,628	INFO rollout_worker.py:786 -- Training on concatenated sample batches:
+[2m[36m(PPO pid=413270)[0m { 'count': 32,
+[2m[36m(PPO pid=413270)[0m   'policy_batches': { 'agent_6': { 'action_dist_inputs': np.ndarray((32, 8), dtype=float32, min=-0.633, max=0.531, mean=0.015),
+[2m[36m(PPO pid=413270)[0m                                    'action_logp': np.ndarray((32,), dtype=float32, min=-2.635, max=-1.733, mean=-2.057),
+[2m[36m(PPO pid=413270)[0m                                    'actions': np.ndarray((32,), dtype=int64, min=0.0, max=7.0, mean=3.844),
+[2m[36m(PPO pid=413270)[0m                                    'advantages': np.ndarray((32,), dtype=float32, min=-0.709, max=1.429, mean=0.228),
+[2m[36m(PPO pid=413270)[0m                                    'agent_index': np.ndarray((32,), dtype=int64, min=6.0, max=6.0, mean=6.0),
+[2m[36m(PPO pid=413270)[0m                                    'eps_id': np.ndarray((32,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(PPO pid=413270)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((32,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=413270)[0m                                             'INVENTORY': np.ndarray((32, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(PPO pid=413270)[0m                                             'READY_TO_SHOOT': np.ndarray((32,), dtype=float32, min=0.0, max=1.0, mean=0.812),
+[2m[36m(PPO pid=413270)[0m                                             'RGB': np.ndarray((32, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=16.284)},
+[2m[36m(PPO pid=413270)[0m                                    'prev_actions': np.ndarray((32,), dtype=int64, min=0.0, max=7.0, mean=3.844),
+[2m[36m(PPO pid=413270)[0m                                    'rewards': np.ndarray((32,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=413270)[0m                                    't': np.ndarray((32,), dtype=int64, min=0.0, max=31.0, mean=15.5),
+[2m[36m(PPO pid=413270)[0m                                    'terminateds': np.ndarray((32,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=413270)[0m                                    'truncateds': np.ndarray((32,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=413270)[0m                                    'unroll_id': np.ndarray((32,), dtype=int64, min=13.0, max=38.0, mean=22.688),
+[2m[36m(PPO pid=413270)[0m                                    'value_targets': np.ndarray((32,), dtype=float32, min=-0.382, max=-0.026, mean=-0.25)}},
+[2m[36m(PPO pid=413270)[0m   'type': 'MultiAgentBatch'}
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,629	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_1/kernel:0' shape=(1, 4) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,629	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_1/bias:0' shape=(4,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,629	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_2/kernel:0' shape=(4, 4) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,629	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_2/bias:0' shape=(4,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,629	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_1_1/kernel:0' shape=(2, 4) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,629	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_1_1/bias:0' shape=(4,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,629	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_2_1/kernel:0' shape=(4, 4) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,629	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_2_1/bias:0' shape=(4,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,629	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_1_2/kernel:0' shape=(1, 4) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,629	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_1_2/bias:0' shape=(4,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,629	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_2_2/kernel:0' shape=(4, 4) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,629	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_2_2/bias:0' shape=(4,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,629	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/conv1/kernel:0' shape=(8, 8, 3, 16) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,630	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/conv1/bias:0' shape=(16,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,630	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/conv2/kernel:0' shape=(11, 11, 16, 128) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,630	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/conv2/bias:0' shape=(128,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,630	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_1_3/kernel:0' shape=(140, 16) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,630	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/fc_1_3/bias:0' shape=(16,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,630	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/lstm/lstm_cell/kernel:0' shape=(24, 8) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,630	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/lstm/lstm_cell/recurrent_kernel:0' shape=(2, 8) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,630	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/lstm/lstm_cell/bias:0' shape=(8,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,630	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/logits/kernel:0' shape=(2, 8) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,630	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/logits/bias:0' shape=(8,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,630	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/values/kernel:0' shape=(2, 1) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,630	INFO tf_policy.py:982 -- Optimizing variable <tf.Variable 'agent_6/values/bias:0' shape=(1,) dtype=float32>
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,632	INFO rnn_sequencing.py:178 -- Padded input for RNN/Attn.Nets/MA:
+[2m[36m(PPO pid=413270)[0m { 'features': [ [ np.ndarray((40,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=7.0, mean=3.075)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=7.0, mean=3.075)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=float32, min=0.0, max=0.0, mean=0.0)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=bool, min=0.0, max=0.0, mean=0.0)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=float32, min=-2.635, max=0.0, mean=-1.646)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40, 8), dtype=float32, min=-0.633, max=0.531, mean=0.012)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=float32, min=-0.709, max=1.429, mean=0.183)],
+[2m[36m(PPO pid=413270)[0m                 [ np.ndarray((40,), dtype=float32, min=-0.382, max=0.0, mean=-0.2)]],
+[2m[36m(PPO pid=413270)[0m   'initial_states': [ np.ndarray((4, 2), dtype=float32, min=-0.745, max=0.006, mean=-0.17),
+[2m[36m(PPO pid=413270)[0m   'max_seq_len': 20,
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,632	INFO tf_run_builder.py:108 -- Executing TF run without tracing. To dump TF timeline traces to disk, set the TF_TIMELINE_DIR environment variable.
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,648	DEBUG rollout_worker.py:825 -- Training out:
+[2m[36m(PPO pid=413270)[0m { 'agent_6': { 'learner_stats': { 'cur_kl_coeff': 0.20000000298023224,
+[2m[36m(PPO pid=413270)[0m                                   'cur_lr': 4.999999873689376e-05,
+[2m[36m(PPO pid=413270)[0m                                   'entropy': 2.0660782,
+[2m[36m(PPO pid=413270)[0m                                   'entropy_coeff': 0.0,
+[2m[36m(PPO pid=413270)[0m                                   'kl': 0.000112934664,
+[2m[36m(PPO pid=413270)[0m                                   'model': {},
+[2m[36m(PPO pid=413270)[0m                                   'policy_loss': -0.22747728,
+[2m[36m(PPO pid=413270)[0m                                   'total_loss': -0.15069234,
+[2m[36m(PPO pid=413270)[0m                                   'vf_explained_var': -1.0,
+[2m[36m(PPO pid=413270)[0m                                   'vf_loss': 0.07676235}}}
+[2m[36m(PPO pid=413270)[0m [32m [repeated 16x across cluster][0m
+[2m[36m(PPO pid=413270)[0m   'seq_lens': np.ndarray((4,), dtype=int32, min=2.0, max=10.0, mean=8.0)}[32m [repeated 2x across cluster][0m
+[2m[36m(PPO pid=413270)[0m 2024-03-23 15:38:21,839	WARNING deprecation.py:50 -- DeprecationWarning: `_get_slice_indices` has been deprecated. This will raise an error in the future!
+/usr/lib/python3.10/subprocess.py:1072: ResourceWarning: subprocess 412774 is still running
+  _warn("subprocess %s is still running" % self.pid,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[       OK ] TrainingTests.test_training
+----------------------------------------------------------------------
+Ran 1 test in 196.024s
+
+OK

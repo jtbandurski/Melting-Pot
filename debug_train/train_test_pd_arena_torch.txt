@@ -1,0 +1,660 @@
+2024-03-23 15:40:52,340	WARNING deprecation.py:50 -- DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+Running tests under Python 3.10.12: /home/jakub/master_thesis/Melting-Pot/.venv/bin/python
+[ RUN      ] TrainingTests.test_training
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1160: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-40-52_961085_415960/logs/gcs_server.out' mode='a' encoding='utf-8'>
+  self.start_gcs_server()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1160: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-40-52_961085_415960/logs/gcs_server.err' mode='a' encoding='utf-8'>
+  self.start_gcs_server()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1165: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-40-52_961085_415960/logs/monitor.out' mode='a' encoding='utf-8'>
+  self.start_monitor()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1165: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-40-52_961085_415960/logs/monitor.err' mode='a' encoding='utf-8'>
+  self.start_monitor()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1181: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-40-52_961085_415960/logs/dashboard.err' mode='a' encoding='utf-8'>
+  self.start_api_server(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1223: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-40-52_961085_415960/logs/raylet.out' mode='a' encoding='utf-8'>
+  self.start_raylet(plasma_directory, object_store_memory)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1223: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-40-52_961085_415960/logs/raylet.err' mode='a' encoding='utf-8'>
+  self.start_raylet(plasma_directory, object_store_memory)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/node.py:1225: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/ray/session_2024-03-23_15-40-52_961085_415960/logs/log_monitor.err' mode='a' encoding='utf-8'>
+  self.start_log_monitor()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+2024-03-23 15:40:55,332	INFO worker.py:1612 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8265 [39m[22m
+2024-03-23 15:40:56,668	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+2024-03-23 15:40:56,671	WARNING algorithm_config.py:2548 -- Setting `exploration_config={'type': 'StochasticSampling'}` because you set `_enable_rl_module_api=False`. This exploration config was restored from a prior exploration config that was overriden when setting `_enable_rl_module_api=True`. This occurs because when RLModule API are enabled, exploration_config can not be set.
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/ray/air/config.py:803: UserWarning: Setting a `RunConfig.local_dir` is deprecated and will be removed in the future. If you are not using remote storage,set the `RunConfig.storage_path` instead. Otherwise, set the`RAY_AIR_LOCAL_CACHE_DIR` environment variable to control the local cache location.
+  warnings.warn(
+2024-03-23 15:40:56,978	WARNING deprecation.py:50 -- DeprecationWarning: `build_tf_policy` has been deprecated. This will raise an error in the future!
+2024-03-23 15:40:56,980	WARNING deprecation.py:50 -- DeprecationWarning: `build_policy_class` has been deprecated. This will raise an error in the future!
+2024-03-23 15:40:57,017	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/gymnasium/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:141: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+2024-03-23 15:40:57,073	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+2024-03-23 15:40:57,102	INFO tune.py:666 -- [output] This will use the new output engine with verbosity 0. To disable the new output and use the legacy output engine, set the environment variable RAY_AIR_NEW_OUTPUT=0. For more information, please see https://github.com/ray-project/ray/issues/36949
+2024-03-23 15:40:57,186	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+2024-03-23 15:40:57,186	WARNING algorithm_config.py:2548 -- Setting `exploration_config={'type': 'StochasticSampling'}` because you set `_enable_rl_module_api=False`. This exploration config was restored from a prior exploration config that was overriden when setting `_enable_rl_module_api=True`. This occurs because when RLModule API are enabled, exploration_config can not be set.
+2024-03-23 15:40:57,186	WARNING algorithm_config.py:656 -- Cannot create PPOConfig from given `config_dict`! Property fcnet_hiddens not supported.
+[2m[36m(pid=416556)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:02,748	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:02,748	WARNING algorithm_config.py:2548 -- Setting `exploration_config={'type': 'StochasticSampling'}` because you set `_enable_rl_module_api=False`. This exploration config was restored from a prior exploration config that was overriden when setting `_enable_rl_module_api=True`. This occurs because when RLModule API are enabled, exploration_config can not be set.
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:02,748	WARNING algorithm_config.py:656 -- Cannot create PPOConfig from given `config_dict`! Property fcnet_hiddens not supported.
+[2m[36m(pid=416740)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m /home/jakub/master_thesis/Melting-Pot/.venv/lib/python3.10/site-packages/gymnasium/spaces/box.py:227: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=416740)[0m   logger.warn("Casting input x to numpy array.")
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,214	DEBUG rollout_worker.py:1761 -- Creating policy for agent_0
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,214	DEBUG rollout_worker.py:1761 -- Creating policy for agent_1
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,214	DEBUG rollout_worker.py:1761 -- Creating policy for agent_2
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,214	DEBUG rollout_worker.py:1761 -- Creating policy for agent_3
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,214	DEBUG rollout_worker.py:1761 -- Creating policy for agent_4
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,214	DEBUG rollout_worker.py:1761 -- Creating policy for agent_5
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,214	DEBUG rollout_worker.py:1761 -- Creating policy for agent_6
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,214	DEBUG rollout_worker.py:1761 -- Creating policy for agent_7
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,216	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,233	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.recurrent_net.LSTMWrapper` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,233	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.complex_input_net.ComplexInputNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,233	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.torch_modelv2.TorchModelV2` has been deprecated. Use `ray.rllib.core.rl_module.rl_module.RLModule` instead. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,234	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.fcnet.FullyConnectedNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,272	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.visionnet.VisionNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,525	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,525	INFO torch_policy_v2.py:113 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,530	WARNING deprecation.py:50 -- DeprecationWarning: `StochasticSampling` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,531	WARNING deprecation.py:50 -- DeprecationWarning: `Exploration` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,531	WARNING deprecation.py:50 -- DeprecationWarning: `Random` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,532	WARNING deprecation.py:50 -- DeprecationWarning: `ValueNetworkMixin` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,532	WARNING deprecation.py:50 -- DeprecationWarning: `LearningRateSchedule` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,532	WARNING deprecation.py:50 -- DeprecationWarning: `EntropyCoeffSchedule` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,532	WARNING deprecation.py:50 -- DeprecationWarning: `KLCoeffMixin` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,552	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.recurrent_net.RecurrentNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,588	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.torch_action_dist.TorchDistributionWrapper` has been deprecated. Use `ray.rllib.models.torch.torch_distributions.TorchCategorical` instead. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,658	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,675	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,675	INFO torch_policy_v2.py:113 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,700	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,715	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,715	INFO torch_policy_v2.py:113 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,738	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,761	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,761	INFO torch_policy_v2.py:113 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,792	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,817	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,817	INFO torch_policy_v2.py:113 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,848	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,871	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,872	INFO torch_policy_v2.py:113 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,899	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,924	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,924	INFO torch_policy_v2.py:113 -- Found 0 visible cuda devices.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,959	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,978	INFO policy.py:1294 -- Policy (worker=1) running on CPU.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,978	INFO torch_policy_v2.py:113 -- Found 0 visible cuda devices.
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,017	INFO worker_set.py:297 -- Inferred observation/action spaces from remote worker (local worker has no env): {'agent_4': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_1': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_6': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_0': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_7': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_3': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_5': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), 'agent_2': (Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), Discrete(8)), '__env__': (Dict('player_0': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_1': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_2': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_3': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_4': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_5': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_6': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8)), 'player_7': Dict('COLLECTIVE_REWARD': Box(-inf, inf, (), float64), 'INVENTORY': Box(-inf, inf, (2,), float64), 'READY_TO_SHOOT': Box(-inf, inf, (), float64), 'RGB': Box(0, 255, (11, 11, 3), uint8))), Dict('player_0': Discrete(8), 'player_1': Discrete(8), 'player_2': Discrete(8), 'player_3': Discrete(8), 'player_4': Discrete(8), 'player_5': Discrete(8), 'player_6': Discrete(8), 'player_7': Discrete(8)))}
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,070	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,996	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,996	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,996	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=416740)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,996	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,996	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,996	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=416740)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,997	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,997	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,997	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=416740)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,997	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,997	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,997	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=416740)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,997	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,997	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,997	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=416740)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,997	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,998	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,998	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=416740)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,998	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,998	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,998	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=416740)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,998	INFO util.py:118 -- Using connectors:
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,998	INFO util.py:119 --     AgentConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         StateBufferConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ViewRequirementAgentConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,998	INFO util.py:120 --     ActionConnectorPipeline
+[2m[36m(RolloutWorker pid=416740)[0m         ConvertToNumpyConnector
+[2m[36m(RolloutWorker pid=416740)[0m         NormalizeActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m         ImmutableActionsConnector
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:09,999	DEBUG rollout_worker.py:645 -- Created rollout worker with env <ray.rllib.env.multi_agent_env.MultiAgentEnvWrapper object at 0x7f1c23ef0e20> (<MeltingPotEnv instance>), policies <PolicyMap lru-caching-capacity=100 policy-IDs=['agent_4', 'agent_1', 'agent_6', 'agent_0', 'agent_7', 'agent_3', 'agent_5', 'agent_2']>
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,342	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,391	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,438	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,482	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,525	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,569	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,619	INFO policy.py:1294 -- Policy (worker=local) running on CPU.
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,640	INFO rollout_worker.py:1742 -- Built policy map: <PolicyMap lru-caching-capacity=100 policy-IDs=['agent_4', 'agent_7', 'agent_5', 'agent_3', 'agent_0', 'agent_2', 'agent_1', 'agent_6']>
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,640	INFO rollout_worker.py:1743 -- Built preprocessor map: {'agent_0': None, 'agent_1': None, 'agent_2': None, 'agent_3': None, 'agent_4': None, 'agent_5': None, 'agent_6': None, 'agent_7': None}
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,641	INFO rollout_worker.py:550 -- Built filter map: defaultdict(<class 'ray.rllib.utils.filter.NoFilter'>, {})
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,641	DEBUG rollout_worker.py:645 -- Created rollout worker with env None (None), policies <PolicyMap lru-caching-capacity=100 policy-IDs=['agent_4', 'agent_7', 'agent_5', 'agent_3', 'agent_0', 'agent_2', 'agent_1', 'agent_6']>
+[2m[36m(PPO pid=416556)[0m Install gputil for GPU system monitoring.
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:10,727	INFO rollout_worker.py:690 -- Generating sample batch of size 10
+[2m[36m(RolloutWorker pid=416740)[0m 2024-03-23 15:41:11,439	INFO rollout_worker.py:732 -- Completed sample batch:
+[2m[36m(RolloutWorker pid=416740)[0m 
+[2m[36m(RolloutWorker pid=416740)[0m { 'count': 10,
+[2m[36m(RolloutWorker pid=416740)[0m   'policy_batches': { 'agent_0': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.676, max=0.668, mean=0.013),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.454, max=-1.78, mean=-2.109),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=1.0, max=7.0, mean=4.5),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.978, max=1.52, mean=0.083),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'infos': np.ndarray((10,), dtype=object, head={}),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'new_obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.85),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=23.569)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.85),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=22.969)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.9),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.923, max=0.688, mean=-0.045),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-2.455, max=1.216, mean=-0.137),
+[2m[36m(RolloutWorker pid=416740)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=-0.036, max=-0.033, mean=-0.035),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'values_bootstrapped': np.ndarray((10,), dtype=float32, min=-1.555, max=0.915, mean=-0.216),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'vf_preds': np.ndarray((10,), dtype=float32, min=-1.555, max=0.944, mean=-0.117)},
+[2m[36m(RolloutWorker pid=416740)[0m                       'agent_1': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.39, max=0.518, mean=-0.001),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.45, max=-1.868, mean=-2.174),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=5.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.017, max=0.233, mean=0.062),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'infos': np.ndarray((10,), dtype=object, head={}),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'new_obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.75),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=17.786)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.85),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=16.508)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=4.3),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.43, max=0.688, mean=0.127),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-0.997, max=1.0, mean=0.496),
+[2m[36m(RolloutWorker pid=416740)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=3.0, max=3.0, mean=3.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=0.107, max=0.117, mean=0.112),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'values_bootstrapped': np.ndarray((10,), dtype=float32, min=-0.079, max=0.127, mean=0.074),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'vf_preds': np.ndarray((10,), dtype=float32, min=-0.126, max=0.127, mean=0.05)},
+[2m[36m(RolloutWorker pid=416740)[0m                       'agent_2': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.784, max=0.859, mean=0.208),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.401, max=-1.694, mean=-1.974),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=1.0, max=7.0, mean=4.9),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.507, max=0.178, mean=-0.095),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=2.0, max=2.0, mean=2.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'infos': np.ndarray((10,), dtype=object, head={}),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'new_obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.7),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=22.399)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.7),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=21.23)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=4.6),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.996, max=0.651, mean=-0.219),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-3.882, max=0.982, mean=-0.961),
+[2m[36m(RolloutWorker pid=416740)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=5.0, max=5.0, mean=5.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=-0.604, max=-0.552, mean=-0.577),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'values_bootstrapped': np.ndarray((10,), dtype=float32, min=-0.75, max=-0.073, mean=-0.531),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'vf_preds': np.ndarray((10,), dtype=float32, min=-0.75, max=-0.073, mean=-0.482)},
+[2m[36m(RolloutWorker pid=416740)[0m                       'agent_3': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.26, max=0.278, mean=0.024),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.173, max=-2.008, mean=-2.078),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.3),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.015, max=0.232, mean=0.062),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=3.0, max=3.0, mean=3.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'infos': np.ndarray((10,), dtype=object, head={}),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'new_obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.85),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=23.018)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.85),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=21.994)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.1),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.378, max=0.225, mean=-0.042),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-1.792, max=1.246, mean=-0.253),
+[2m[36m(RolloutWorker pid=416740)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=7.0, max=7.0, mean=7.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=-0.015, max=-0.014, mean=-0.015),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'values_bootstrapped': np.ndarray((10,), dtype=float32, min=-0.247, max=-0.013, mean=-0.078),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'vf_preds': np.ndarray((10,), dtype=float32, min=-0.247, max=0.001, mean=-0.076)},
+[2m[36m(RolloutWorker pid=416740)[0m                       'agent_4': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.045, max=0.052, mean=0.001),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.096, max=-2.079, mean=-2.082),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.3),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.0, max=0.022, mean=0.004),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=4.0, max=4.0, mean=4.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'infos': np.ndarray((10,), dtype=object, head={}),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'new_obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.85),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=19.027)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.85),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=18.599)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.021, max=0.07, mean=0.004),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-1.986, max=0.133, mean=-0.393),
+[2m[36m(RolloutWorker pid=416740)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=9.0, max=9.0, mean=9.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=-0.0, max=-0.0, mean=-0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'values_bootstrapped': np.ndarray((10,), dtype=float32, min=-0.022, max=0.0, mean=-0.004),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'vf_preds': np.ndarray((10,), dtype=float32, min=-0.022, max=0.0, mean=-0.004)},
+[2m[36m(RolloutWorker pid=416740)[0m                       'agent_5': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.336, max=0.393, mean=-0.012),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.363, max=-2.062, mean=-2.111),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.1),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.395, max=0.055, mean=-0.035),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=5.0, max=5.0, mean=5.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'infos': np.ndarray((10,), dtype=object, head={}),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'new_obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.7),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=20.497)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.7),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=20.058)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.083, max=0.632, mean=0.019),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-0.083, max=0.818, mean=0.028),
+[2m[36m(RolloutWorker pid=416740)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=11.0, max=11.0, mean=11.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=-0.007, max=-0.006, mean=-0.007),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'values_bootstrapped': np.ndarray((10,), dtype=float32, min=-0.062, max=0.389, mean=0.028),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'vf_preds': np.ndarray((10,), dtype=float32, min=-0.062, max=0.389, mean=0.029)},
+[2m[36m(RolloutWorker pid=416740)[0m                       'agent_6': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.868, max=0.86, mean=0.125),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.463, max=-1.356, mean=-1.846),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=2.0, max=7.0, mean=5.2),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-1.143, max=0.291, mean=-0.427),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=6.0, max=6.0, mean=6.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'infos': np.ndarray((10,), dtype=object, head={}),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'new_obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.85),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=20.338)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.85),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=20.128)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=5.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.806, max=0.992, mean=-0.061),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-2.005, max=2.747, mean=-0.119),
+[2m[36m(RolloutWorker pid=416740)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=13.0, max=13.0, mean=13.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=-0.24, max=-0.219, mean=-0.229),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'values_bootstrapped': np.ndarray((10,), dtype=float32, min=-0.517, max=0.906, mean=0.157),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'vf_preds': np.ndarray((10,), dtype=float32, min=-0.517, max=0.906, mean=0.197)},
+[2m[36m(RolloutWorker pid=416740)[0m                       'agent_7': { 'action_dist_inputs': np.ndarray((10, 8), dtype=float32, min=-0.708, max=0.449, mean=-0.028),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'action_logp': np.ndarray((10,), dtype=float32, min=-2.541, max=-1.709, mean=-2.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'actions': np.ndarray((10,), dtype=int64, min=1.0, max=7.0, mean=3.3),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'advantages': np.ndarray((10,), dtype=float32, min=-0.085, max=0.001, mean=-0.014),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'agent_index': np.ndarray((10,), dtype=int64, min=7.0, max=7.0, mean=7.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'eps_id': np.ndarray((10,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'infos': np.ndarray((10,), dtype=object, head={}),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'new_obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.85),
+[2m[36m(RolloutWorker pid=416740)[0m                                                 'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=20.76)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'INVENTORY': np.ndarray((10, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'READY_TO_SHOOT': np.ndarray((10,), dtype=float32, min=0.0, max=1.0, mean=0.85),
+[2m[36m(RolloutWorker pid=416740)[0m                                             'RGB': np.ndarray((10, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=20.422)},
+[2m[36m(RolloutWorker pid=416740)[0m                                    'prev_actions': np.ndarray((10,), dtype=int64, min=0.0, max=7.0, mean=3.1),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'rewards': np.ndarray((10,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'seq_lens': np.ndarray((1,), dtype=int32, min=10.0, max=10.0, mean=10.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_0': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_in_1': np.ndarray((1, 2), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_0': np.ndarray((10, 2), dtype=float32, min=-0.998, max=0.418, mean=-0.212),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'state_out_1': np.ndarray((10, 2), dtype=float32, min=-3.644, max=1.787, mean=-0.807),
+[2m[36m(RolloutWorker pid=416740)[0m                                    't': np.ndarray((10,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'terminateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'truncateds': np.ndarray((10,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'unroll_id': np.ndarray((10,), dtype=int64, min=15.0, max=15.0, mean=15.0),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'value_targets': np.ndarray((10,), dtype=float32, min=-0.003, max=-0.002, mean=-0.002),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'values_bootstrapped': np.ndarray((10,), dtype=float32, min=-0.003, max=0.083, mean=0.011),
+[2m[36m(RolloutWorker pid=416740)[0m                                    'vf_preds': np.ndarray((10,), dtype=float32, min=-0.003, max=0.083, mean=0.011)}},
+[2m[36m(RolloutWorker pid=416740)[0m   'type': 'MultiAgentBatch'}
+[2m[36m(RolloutWorker pid=416740)[0m 
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:32,114	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.execution.train_ops.train_one_step` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:32,114	WARNING deprecation.py:50 -- DeprecationWarning: `_get_slice_indices` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:32,118	INFO rollout_worker.py:786 -- Training on concatenated sample batches:
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:32,124	INFO rnn_sequencing.py:178 -- Padded input for RNN/Attn.Nets/MA:
+[2m[36m(PPO pid=416556)[0m { 'features': [ [ np.ndarray((40,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=7.0, mean=2.675)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=7.0, mean=2.65)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=0.0, max=0.0, mean=0.0)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=bool, min=0.0, max=0.0, mean=0.0)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=bool, min=0.0, max=0.0, mean=0.0)],
+[2m[36m(PPO pid=416556)[0m                 [ [ {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None]],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=6.32095341782396e+17, mean=5.056762734259168e+17)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=228.0, mean=170.4)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=4.0, mean=3.2)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=271.0, mean=204.4)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=-0.008, max=0.049, mean=0.001)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40, 8), dtype=float32, min=-0.143, max=0.123, mean=-0.0)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=-2.141, max=0.0, mean=-1.663)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=-0.008, max=0.049, mean=0.001)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=-1.874, max=0.152, mean=-0.104)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=-0.005, max=0.0, mean=-0.002)]],
+[2m[36m(PPO pid=416556)[0m   'initial_states': [ np.ndarray((4, 2), dtype=float32, min=-0.003, max=0.045, mean=0.006),
+[2m[36m(PPO pid=416556)[0m   'max_seq_len': 20,
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,038	DEBUG rollout_worker.py:1761 -- Creating policy for agent_7[32m [repeated 8x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/ray-logging.html#log-deduplication for more options.)[0m
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,598	WARNING algorithm_config.py:2534 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.[32m [repeated 8x across cluster][0m
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,044	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.tf.recurrent_net.LSTMWrapper` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,044	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.complex_input_net.ComplexInputNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,044	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.torch_modelv2.TorchModelV2` has been deprecated. Use `ray.rllib.core.rl_module.rl_module.RLModule` instead. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,045	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.fcnet.FullyConnectedNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,050	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.visionnet.VisionNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,619	INFO torch_policy_v2.py:113 -- Found 0 visible cuda devices.[32m [repeated 8x across cluster][0m
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,270	WARNING deprecation.py:50 -- DeprecationWarning: `StochasticSampling` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,270	WARNING deprecation.py:50 -- DeprecationWarning: `Exploration` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,271	WARNING deprecation.py:50 -- DeprecationWarning: `Random` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,272	WARNING deprecation.py:50 -- DeprecationWarning: `ValueNetworkMixin` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,272	WARNING deprecation.py:50 -- DeprecationWarning: `LearningRateSchedule` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,272	WARNING deprecation.py:50 -- DeprecationWarning: `EntropyCoeffSchedule` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,272	WARNING deprecation.py:50 -- DeprecationWarning: `KLCoeffMixin` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,281	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.recurrent_net.RecurrentNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,297	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.torch_action_dist.TorchDistributionWrapper` has been deprecated. Use `ray.rllib.models.torch.torch_distributions.TorchCategorical` instead. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,640	INFO util.py:118 -- Using connectors:[32m [repeated 8x across cluster][0m
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,640	INFO util.py:119 --     AgentConnectorPipeline[32m [repeated 8x across cluster][0m
+[2m[36m(PPO pid=416556)[0m         StateBufferConnector[32m [repeated 8x across cluster][0m
+[2m[36m(PPO pid=416556)[0m         ViewRequirementAgentConnector[32m [repeated 8x across cluster][0m
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:10,640	INFO util.py:120 --     ActionConnectorPipeline[32m [repeated 8x across cluster][0m
+[2m[36m(PPO pid=416556)[0m         ConvertToNumpyConnector[32m [repeated 8x across cluster][0m
+[2m[36m(PPO pid=416556)[0m         NormalizeActionsConnector[32m [repeated 8x across cluster][0m
+[2m[36m(PPO pid=416556)[0m         ImmutableActionsConnector[32m [repeated 8x across cluster][0m
+[2m[36m(PPO pid=416556)[0m [32m [repeated 15x across cluster][0m
+[2m[36m(PPO pid=416556)[0m { 'count': 32,
+[2m[36m(PPO pid=416556)[0m   'policy_batches': { 'agent_4': { 'action_dist_inputs': np.ndarray((32, 8), dtype=float32, min=-0.143, max=0.123, mean=-0.0),
+[2m[36m(PPO pid=416556)[0m                                    'action_logp': np.ndarray((32,), dtype=float32, min=-2.141, max=-2.048, mean=-2.079),
+[2m[36m(PPO pid=416556)[0m                                    'actions': np.ndarray((32,), dtype=int64, min=0.0, max=7.0, mean=3.344),
+[2m[36m(PPO pid=416556)[0m                                    'advantages': np.ndarray((32,), dtype=float32, min=-1.874, max=0.152, mean=-0.13),
+[2m[36m(PPO pid=416556)[0m                                    'agent_index': np.ndarray((32,), dtype=int64, min=4.0, max=4.0, mean=4.0),
+[2m[36m(PPO pid=416556)[0m                                    'eps_id': np.ndarray((32,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(PPO pid=416556)[0m                                    'infos': np.ndarray((32,), dtype=object, head={}),
+[2m[36m(PPO pid=416556)[0m                                    'new_obs': { 'COLLECTIVE_REWARD': np.ndarray((32,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=416556)[0m                                             'INVENTORY': np.ndarray((32, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),[32m [repeated 2x across cluster][0m
+[2m[36m(PPO pid=416556)[0m                                             'READY_TO_SHOOT': np.ndarray((32,), dtype=float32, min=0.0, max=1.0, mean=0.953),[32m [repeated 2x across cluster][0m
+[2m[36m(PPO pid=416556)[0m                                             'RGB': np.ndarray((32, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=22.115)},[32m [repeated 2x across cluster][0m
+[2m[36m(PPO pid=416556)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((32,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=416556)[0m                                    'prev_actions': np.ndarray((32,), dtype=int64, min=0.0, max=7.0, mean=3.312),
+[2m[36m(PPO pid=416556)[0m                                    'rewards': np.ndarray((32,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=416556)[0m   'seq_lens': np.ndarray((4,), dtype=int32, min=2.0, max=10.0, mean=8.0)}[32m [repeated 2x across cluster][0m
+[2m[36m(PPO pid=416556)[0m                                    't': np.ndarray((32,), dtype=int64, min=240.0, max=271.0, mean=255.5),
+[2m[36m(PPO pid=416556)[0m                                    'terminateds': np.ndarray((32,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=416556)[0m                                    'truncateds': np.ndarray((32,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=416556)[0m                                    'unroll_id': np.ndarray((32,), dtype=int64, min=204.0, max=228.0, mean=213.0),
+[2m[36m(PPO pid=416556)[0m                                    'value_targets': np.ndarray((32,), dtype=float32, min=-0.005, max=-0.0, mean=-0.002),
+[2m[36m(PPO pid=416556)[0m                                    'values_bootstrapped': np.ndarray((32,), dtype=float32, min=-0.008, max=0.049, mean=0.001),
+[2m[36m(PPO pid=416556)[0m                                    'vf_preds': np.ndarray((32,), dtype=float32, min=-0.008, max=0.049, mean=0.001)}},
+[2m[36m(PPO pid=416556)[0m   'type': 'MultiAgentBatch'}
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:41:32,204	DEBUG rollout_worker.py:825 -- Training out:
+[2m[36m(PPO pid=416556)[0m { 'agent_4': { 'custom_metrics': {},
+[2m[36m(PPO pid=416556)[0m                'diff_num_grad_updates_vs_sampler_policy': 0,
+[2m[36m(PPO pid=416556)[0m                'learner_stats': { 'allreduce_latency': 0.0,
+[2m[36m(PPO pid=416556)[0m                                   'cur_kl_coeff': 0.2,
+[2m[36m(PPO pid=416556)[0m                                   'cur_lr': 5e-05,
+[2m[36m(PPO pid=416556)[0m                                   'entropy': 2.0793099403381348,
+[2m[36m(PPO pid=416556)[0m                                   'entropy_coeff': 0.0,
+[2m[36m(PPO pid=416556)[0m                                   'grad_gnorm': 1.3360599279403687,
+[2m[36m(PPO pid=416556)[0m                                   'kl': -2.7891639220456454e-08,
+[2m[36m(PPO pid=416556)[0m                                   'policy_loss': 0.13014155626296997,
+[2m[36m(PPO pid=416556)[0m                                   'total_loss': 0.13025251030921936,
+[2m[36m(PPO pid=416556)[0m                                   'vf_explained_var': -1.0,
+[2m[36m(PPO pid=416556)[0m                                   'vf_loss': 0.0001109552031266503},
+[2m[36m(PPO pid=416556)[0m                'model': {},
+[2m[36m(PPO pid=416556)[0m                'num_agent_steps_trained': 32,
+[2m[36m(PPO pid=416556)[0m                'num_grad_updates_lifetime': 1}}
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:42:32,208	INFO rnn_sequencing.py:178 -- Padded input for RNN/Attn.Nets/MA:
+[2m[36m(PPO pid=416556)[0m { 'features': [ [ np.ndarray((40,), dtype=float32, min=0.0, max=4.8, mean=0.12),
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=0.0, max=4.8, mean=0.12),
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=7.0, mean=2.75)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=7.0, mean=2.725)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=0.0, max=2.289, mean=0.057)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=bool, min=0.0, max=0.0, mean=0.0)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=bool, min=0.0, max=0.0, mean=0.0)],
+[2m[36m(PPO pid=416556)[0m                 [ [ {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     {},
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None,
+[2m[36m(PPO pid=416556)[0m                     None]],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=6.32095341782396e+17, mean=5.056762734259168e+17)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=273.0, mean=206.4)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=1.0, mean=0.8)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=int64, min=0.0, max=331.0, mean=252.4)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=-0.562, max=0.503, mean=-0.005)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40, 8), dtype=float32, min=-0.55, max=0.501, mean=0.001)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=-2.379, max=0.0, mean=-1.644)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=-0.562, max=0.503, mean=-0.004)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=-0.66, max=6.852, mean=1.463)],
+[2m[36m(PPO pid=416556)[0m                 [ np.ndarray((40,), dtype=float32, min=-0.095, max=2.34, mean=0.546)]],
+[2m[36m(PPO pid=416556)[0m   'initial_states': [ np.ndarray((4, 2), dtype=float32, min=-0.466, max=0.969, mean=0.061),
+[2m[36m(PPO pid=416556)[0m   'max_seq_len': 20,
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:42:32,214	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.recurrent_net.RecurrentNetwork` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:42:32,215	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.torch_action_dist.TorchDistributionWrapper` has been deprecated. Use `ray.rllib.models.torch.torch_distributions.TorchCategorical` instead. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:42:32,233	DEBUG rollout_worker.py:825 -- Training out:
+[2m[36m(PPO pid=416556)[0m { 'agent_1': { 'custom_metrics': {},
+[2m[36m(PPO pid=416556)[0m                'diff_num_grad_updates_vs_sampler_policy': 337,
+[2m[36m(PPO pid=416556)[0m                'learner_stats': { 'allreduce_latency': 0.0,
+[2m[36m(PPO pid=416556)[0m                                   'cur_kl_coeff': 0.2,
+[2m[36m(PPO pid=416556)[0m                                   'cur_lr': 5e-05,
+[2m[36m(PPO pid=416556)[0m                                   'entropy': 2.0471510887145996,
+[2m[36m(PPO pid=416556)[0m                                   'entropy_coeff': 0.0,
+[2m[36m(PPO pid=416556)[0m                                   'grad_gnorm': 1.8815221786499023,
+[2m[36m(PPO pid=416556)[0m                                   'kl': 0.02170465514063835,
+[2m[36m(PPO pid=416556)[0m                                   'policy_loss': -1.9753080606460571,
+[2m[36m(PPO pid=416556)[0m                                   'total_loss': -1.3688385486602783,
+[2m[36m(PPO pid=416556)[0m                                   'vf_explained_var': 0.5003910660743713,
+[2m[36m(PPO pid=416556)[0m                                   'vf_loss': 0.6021286249160767},
+[2m[36m(PPO pid=416556)[0m                'model': {},
+[2m[36m(PPO pid=416556)[0m                'num_agent_steps_trained': 32,
+[2m[36m(PPO pid=416556)[0m                'num_grad_updates_lifetime': 338}}
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:42:32,233	WARNING deprecation.py:50 -- DeprecationWarning: `_get_slice_indices` has been deprecated. This will raise an error in the future!
+[2m[36m(PPO pid=416556)[0m 2024-03-23 15:42:32,237	INFO rollout_worker.py:786 -- Training on concatenated sample batches:
+[2m[36m(PPO pid=416556)[0m { 'count': 32,
+[2m[36m(PPO pid=416556)[0m   'policy_batches': { 'agent_1': { 'action_dist_inputs': np.ndarray((32, 8), dtype=float32, min=-0.466, max=0.62, mean=-0.012),
+[2m[36m(PPO pid=416556)[0m                                    'action_logp': np.ndarray((32,), dtype=float32, min=-2.596, max=-1.529, mean=-2.107),
+[2m[36m(PPO pid=416556)[0m                                    'actions': np.ndarray((32,), dtype=int64, min=0.0, max=7.0, mean=2.75),
+[2m[36m(PPO pid=416556)[0m                                    'advantages': np.ndarray((32,), dtype=float32, min=-0.655, max=0.933, mean=-0.12),
+[2m[36m(PPO pid=416556)[0m                                    'agent_index': np.ndarray((32,), dtype=int64, min=1.0, max=1.0, mean=1.0),
+[2m[36m(PPO pid=416556)[0m                                    'eps_id': np.ndarray((32,), dtype=int64, min=6.32095341782396e+17, max=6.32095341782396e+17, mean=6.32095341782396e+17),
+[2m[36m(PPO pid=416556)[0m                                    'infos': np.ndarray((32,), dtype=object, head={}),
+[2m[36m(PPO pid=416556)[0m                                    'new_obs': { 'COLLECTIVE_REWARD': np.ndarray((32,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=416556)[0m                                    'obs': { 'COLLECTIVE_REWARD': np.ndarray((32,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=416556)[0m                                    'prev_actions': np.ndarray((32,), dtype=int64, min=0.0, max=7.0, mean=2.75),
+[2m[36m(PPO pid=416556)[0m                                    'rewards': np.ndarray((32,), dtype=float32, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=416556)[0m                                    't': np.ndarray((32,), dtype=int64, min=360.0, max=391.0, mean=375.5),
+[2m[36m(PPO pid=416556)[0m                                    'terminateds': np.ndarray((32,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=416556)[0m                                    'truncateds': np.ndarray((32,), dtype=bool, min=0.0, max=0.0, mean=0.0),
+[2m[36m(PPO pid=416556)[0m                                    'unroll_id': np.ndarray((32,), dtype=int64, min=297.0, max=321.0, mean=306.0),
+[2m[36m(PPO pid=416556)[0m                                    'value_targets': np.ndarray((32,), dtype=float32, min=-0.077, max=0.132, mean=0.018),
+[2m[36m(PPO pid=416556)[0m                                    'values_bootstrapped': np.ndarray((32,), dtype=float32, min=-0.464, max=0.202, mean=-0.009),
+[2m[36m(PPO pid=416556)[0m                                    'vf_preds': np.ndarray((32,), dtype=float32, min=-0.464, max=0.202, mean=-0.023)}},
+[2m[36m(PPO pid=416556)[0m   'type': 'MultiAgentBatch'}
+[2m[36m(PPO pid=416556)[0m [32m [repeated 19x across cluster][0m
+[2m[36m(PPO pid=416556)[0m                                             'INVENTORY': np.ndarray((32, 2), dtype=float32, min=1.0, max=1.0, mean=1.0),[32m [repeated 2x across cluster][0m
+[2m[36m(PPO pid=416556)[0m                                             'READY_TO_SHOOT': np.ndarray((32,), dtype=float32, min=0.0, max=1.0, mean=0.625),[32m [repeated 2x across cluster][0m
+[2m[36m(PPO pid=416556)[0m                                             'RGB': np.ndarray((32, 11, 11, 3), dtype=uint8, min=0.0, max=252.0, mean=9.018)},[32m [repeated 2x across cluster][0m
+[2m[36m(PPO pid=416556)[0m                                    'seq_lens': np.ndarray((4,), dtype=int32, min=2.0, max=10.0, mean=8.0),[32m [repeated 2x across cluster][0m
+/usr/lib/python3.10/subprocess.py:1072: ResourceWarning: subprocess 416073 is still running
+  _warn("subprocess %s is still running" % self.pid,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[       OK ] TrainingTests.test_training
+----------------------------------------------------------------------
+Ran 1 test in 112.420s
+
+OK

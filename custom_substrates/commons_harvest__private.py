@@ -20,7 +20,7 @@ APPLE_RESPAWN_RADIUS = 2.0
 
 # from reward transfer paper
 REGROWTH_PROBABILITIES = [0.0, 0.025]
-SPRITE_SIZE = 1
+SPRITE_SIZE = 8
 
 # 7x13 map with wall division in the middle
 ASCII_MAP = """

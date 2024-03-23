@@ -47,14 +47,14 @@ def get_cli_args():
   parser.add_argument(
         "--framework",
         choices=["tf", "torch"],
-        default="torch",
+        default="tf",
         help="The DL framework specifier (tf2 eager is not supported).",
   )
   parser.add_argument(
       "--exp",
       type=str,
-      choices = ['pd_arena','al_harvest','clean_up','territory_rooms'],
-      default="pd_arena",
+      choices = ['private','collective','tragedy_test','pd_arena','al_harvest','clean_up','territory_rooms'],
+      default="private",
       help="Name of the substrate to run",
   )
   parser.add_argument(

@@ -20,7 +20,7 @@ APPLE_RESPAWN_RADIUS = 2.0
 
 # from reward transfer paper
 REGROWTH_PROBABILITIES = [0.0, 0.025]
-SPRITE_SIZE = 1
+SPRITE_SIZE = 8
 
 # 7x13 map with wall division in the middle
 ASCII_MAP = """
@@ -444,13 +444,13 @@ def create_avatar_object(player_idx: int,
                       "move": {"default": 0, "min": 0, "max": len(_COMPASS)},
                   },
                   "view": {
-                      "left": 0,
-                      "right": 7-1, # <map_width> - 1
-                      "forward": 0,
-                      "backward": 13-1, # <map_height> - 1
-                      "centered": False
+                      "left": 7/2,
+                      "right": 7/2, # <map_width> - 1
+                      "forward": 7/2,
+                      "backward": 7/2, # <map_height> - 1
+                      "centered": True
                   },
-                  "fullObservations": True,
+                  "fullObservations": False,
                   "useAbsoluteCoordinates": True,
                   "spriteMap": custom_sprite_map,
                   "randomizeInitialOrientation": False
