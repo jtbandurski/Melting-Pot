@@ -51,6 +51,12 @@ def run_evaluation(args):
     scenario = args.scenario
   else:
     scenario = configs['env_config']['substrate']
+
+  if args.tragedy_test:
+    scenario = "commons_harvest__tragedy_test"
+  else:
+    scenario = configs['env_config']['substrate']
+
   scaled = configs['env_config']['scaled']
 
   if args.create_videos:
@@ -84,6 +90,13 @@ if __name__ == "__main__":
 
   parser = argparse.ArgumentParser(description="Evaluation Script for Multi-Agent RL in Meltingpot")
   
+  # new parameter that indicates if the tragedy_test substrate is being used
+  parser.add_argument(
+      "--tragedy_test",
+      type=bool,
+      default=False,
+      help="Default tragedy_test is not used. Substrate is taken from traing checkpoint.",
+  )
   parser.add_argument(
       "--num_episodes",
       type=int,
