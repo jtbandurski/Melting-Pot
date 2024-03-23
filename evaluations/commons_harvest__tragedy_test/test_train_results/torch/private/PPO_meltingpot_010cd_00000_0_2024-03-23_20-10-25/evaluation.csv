@@ -1,0 +1,3 @@
+,background_per_capita_return,background_player_names,background_player_returns,focal_per_capita_return,focal_player_names,focal_player_returns,video_path
+0,,(),[],15.5,"['agent_1', 'agent_0']",[22.  9.],evaluations/commons_harvest__tragedy_test/test_train_results/torch/private/PPO_meltingpot_010cd_00000_0_2024-03-23_20-10-25/4fde9f63efe743fdab14fe6f7b3e04c5.webm
+1,,(),[],4.0,"['agent_0', 'agent_0']",[5. 3.],evaluations/commons_harvest__tragedy_test/test_train_results/torch/private/PPO_meltingpot_010cd_00000_0_2024-03-23_20-10-25/64449ee8031f480ba8b879406aabd60e.webm
