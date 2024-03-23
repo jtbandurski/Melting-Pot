@@ -94,12 +94,16 @@ def get_experiment_config(args, default_config):
         "exp_name": args.exp,
         "stopping": {
                     #"timesteps_total": 1000000,
-                    "training_iteration": 1,
+                    "training_iteration": 100,
                     #"episode_reward_mean": 100,
         },
         "num_checkpoints": 5,
-        "checkpoint_interval": 10,
+        "checkpoint_interval": 20,
         "checkpoint_at_end": True,
+        # more checkpoint options
+        # *Best* checkpoints are determined by these params:
+        "checkpoint_score_attribute": "episode_reward_mean",
+        "checkpoint_score_order": "max",
         "results_dir": args.results_dir,
         "logging": args.logging,
 
@@ -172,6 +176,9 @@ def get_experiment_config(args, default_config):
     experiment_configs['keep'] = params_dict['num_checkpoints']
     experiment_configs['freq'] = params_dict['checkpoint_interval']
     experiment_configs['end'] = params_dict['checkpoint_at_end']
+    # more checkpoint settings
+    experiment_configs['checkpoint_score_attribute'] = params_dict['checkpoint_score_attribute']
+    experiment_configs['checkpoint_score_order'] = params_dict['checkpoint_score_order']
     if args.framework == 'tf':
         experiment_configs['dir'] = f"{params_dict['results_dir']}/tf"
     else:

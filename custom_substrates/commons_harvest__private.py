@@ -444,13 +444,13 @@ def create_avatar_object(player_idx: int,
                       "move": {"default": 0, "min": 0, "max": len(_COMPASS)},
                   },
                   "view": {
-                      "left": 0,
-                      "right": 7-1, # <map_width> - 1
-                      "forward": 0,
-                      "backward": 13-1, # <map_height> - 1
-                      "centered": False
+                      "left": 7/2,
+                      "right": 7/2, 
+                      "forward": 7/2,
+                      "backward": 7/2, 
+                      "centered": True
                   },
-                  "fullObservations": True,
+                  "fullObservations": False,
                   "useAbsoluteCoordinates": True,
                   "spriteMap": custom_sprite_map,
                   "randomizeInitialOrientation": False

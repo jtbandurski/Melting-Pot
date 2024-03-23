@@ -4,6 +4,7 @@ import contextlib
 import json
 import pandas as pd
 import tensorflow as tf
+import os
 tf.compat.v1.disable_eager_execution()
 
 from baselines.train.configs import SUPPORTED_SCENARIOS
@@ -53,7 +54,12 @@ def run_evaluation(args):
   scaled = configs['env_config']['scaled']
 
   if args.create_videos:
-    video_dir = args.video_dir
+    video_dir = f"evaluations/{scenario}/{args.config_dir}/"
+    # if the target directory does not exist, create it
+    try:
+      os.makedirs(video_dir)
+    except FileExistsError:
+      pass
   else:
     video_dir = None
     
@@ -138,4 +144,11 @@ if __name__ == "__main__":
   print(f"Results for {scenario}: ")
   with pd.option_context('display.max_rows', None, 'display.max_columns', None):
       print(results)
+  
+  # Save the results to a csv file
+  # if the target directory does not exist, create it
+  try:
+    os.makedirs(f'evaluations/{scenario}/{args.config_dir}/')
+  except FileExistsError:
+    results.to_csv(f'evaluations/{scenario}/{args.config_dir}/evaluation.csv')
 

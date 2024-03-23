@@ -445,9 +445,9 @@ def create_avatar_object(player_idx: int,
                   },
                   "view": {
                       "left": 7/2,
-                      "right": 7/2, # <map_width> - 1
+                      "right": 7/2, 
                       "forward": 7/2,
-                      "backward": 7/2, # <map_height> - 1
+                      "backward": 7/2, 
                       "centered": True
                   },
                   "fullObservations": False,

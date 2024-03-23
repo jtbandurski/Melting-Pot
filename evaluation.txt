@@ -1,0 +1,14 @@
+Evaluating with the following arguments:  Namespace(num_episodes=2, eval_on_scenario=False, scenario=None, config_dir='test_train_results/torch/private/PPO_meltingpot_010cd_00000_0_2024-03-23_20-10-25', policies_dir='test_train_results/torch/private/PPO_meltingpot_010cd_00000_0_2024-03-23_20-10-25/checkpoint_000100/policies', create_videos=False, video_dir=None)
+evaluate_on_scenario=False. Evaluating on substrate found in the config file provided.
+Results for commons_harvest__private: 
+   background_per_capita_return background_player_names  \
+0                           NaN                      ()   
+1                           NaN                      ()   
+
+  background_player_returns  focal_per_capita_return  focal_player_names  \
+0                        []                     19.5  [agent_1, agent_1]   
+1                        []                     10.5  [agent_1, agent_1]   
+
+  focal_player_returns  
+0         [24.0, 15.0]  
+1          [16.0, 5.0]  

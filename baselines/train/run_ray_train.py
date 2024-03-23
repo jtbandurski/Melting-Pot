@@ -161,8 +161,12 @@ if __name__ == "__main__":
 
 
   # Setup checkpointing configurations
-  ckpt_config = air.CheckpointConfig(num_to_keep=exp_config['keep'], checkpoint_frequency=exp_config['freq'], 
-                                     checkpoint_at_end=exp_config['end'])
+  ckpt_config = air.CheckpointConfig(num_to_keep=exp_config['keep'],
+                                     checkpoint_frequency=exp_config['freq'], 
+                                     checkpoint_at_end=exp_config['end'],
+                                     # adding more checkpoint options
+                                     checkpoint_score_attribute=exp_config['checkpoint_score_attribute'],
+                                     checkpoint_score_order=exp_config['checkpoint_score_order'],)
 
   # Run Trials
   results = tune.Tuner(
