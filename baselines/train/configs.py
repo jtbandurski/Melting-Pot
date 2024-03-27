@@ -98,16 +98,17 @@ def get_experiment_config(args, default_config):
         ],
 
         # agent model
-        "fcnet_hidden": (4, 4),
-        "post_fcnet_hidden": (16,),
+        "fcnet_hidden": (64, 64),
+        "post_fcnet_hidden": (16,), # not needed
         "cnn_activation": "relu",
         "fcnet_activation": "relu",
         "post_fcnet_activation": "relu",
         "use_lstm": True,
         "lstm_use_prev_action": True,
         "lstm_use_prev_reward": False,
-        "lstm_cell_size": 2,
+        "lstm_cell_size": 128,
         "shared_policy": False,
+        # "dim": 7,
         # adding learning rate and scheduler (linear interpolation)
         "lr": 5e-4,
         "lr_schedule": [
@@ -124,7 +125,7 @@ def get_experiment_config(args, default_config):
                     "training_iteration": 100,
                     #"episode_reward_mean": 100,
         },
-        "num_checkpoints": 2,
+        "num_checkpoints": 3,
         "checkpoint_interval": 10,
         "checkpoint_at_end": False,
         # more checkpoint options
@@ -192,9 +193,10 @@ def get_experiment_config(args, default_config):
             action_space=base_env.action_space[f"player_{i}"],
             config={
                 "model": {
+                    "dim": 7, # input size
                     "conv_filters": 
                                     [[16, [4, 4], 1], # from input 7x7x3 to 4x4x16
-                                    [32, [4, 4], 1]], # from 4x4x16 to 1x1x32 which is input for (64,64) FC layers 
+                                    [32, [sprite_x, sprite_y], 1],], # from 4x4x16 to 1x1x32 which is input for (64,64) FC layers 
                 },
             })
         player_to_agent[f"player_{i}"] = f"agent_{i}"
@@ -203,14 +205,15 @@ def get_experiment_config(args, default_config):
                                                                   player_to_agent[agent_id]))
     
     run_configs.model["fcnet_hiddens"] = params_dict['fcnet_hidden']
-    run_configs.model["post_fcnet_hiddens"] = params_dict['post_fcnet_hidden']
+    run_configs.model["post_fcnet_hiddens"] = params_dict['post_fcnet_hidden'] # not needed
     run_configs.model["conv_activation"] = params_dict['cnn_activation'] 
     run_configs.model["fcnet_activation"] = params_dict['fcnet_activation']
-    run_configs.model["post_fcnet_activation"] = params_dict['post_fcnet_activation']
+    run_configs.model["post_fcnet_activation"] = params_dict['post_fcnet_activation'] # not needed
     run_configs.model["use_lstm"] = params_dict['use_lstm']
     run_configs.model["lstm_use_prev_action"] = params_dict['lstm_use_prev_action']
     run_configs.model["lstm_use_prev_reward"] = params_dict['lstm_use_prev_reward']
     run_configs.model["lstm_cell_size"] = params_dict['lstm_cell_size']
+    # run_configs.model["dim"] = params_dict['dim']
 
     # Experiment Trials
     experiment_configs['name'] = params_dict['exp_name']

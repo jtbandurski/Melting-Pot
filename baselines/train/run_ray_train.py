@@ -148,6 +148,8 @@ if __name__ == "__main__":
             group=wandb_group,
             api_key=os.environ["WANDB_API_KEY"],
             log_config=True,
+            upload_checkpoints=True,
+            
         )
     ]
   else:
