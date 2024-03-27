@@ -7,7 +7,7 @@ from typing import *
 from ray import air
 from ray import tune
 from configs import get_experiment_config
-from ray.rllib.algorithms import ppo
+from ray.rllib.algorithms import ppo, a3c
 from ray.tune import registry
 from ray.air.integrations.wandb import WandbLoggerCallback
 from baselines.train import make_envs
@@ -40,7 +40,7 @@ def get_cli_args():
   )
   parser.add_argument(
         "--algo",
-        choices=["ppo"],
+        choices=["ppo","a3c"],
         default="ppo",
         help="Algorithm to train agents.",
   )
@@ -116,6 +116,9 @@ if __name__ == "__main__":
   if args.algo == "ppo":
      trainer = "PPO"
      default_config = ppo.PPOConfig()
+  elif args.algo == "a3c":
+      trainer = "A3C"
+      default_config = a3c.A3CConfig()
   else:
      print('The selected option is not tested. You may encounter issues if you use the baseline \
            policy configurations with non-tested algorithms')
@@ -167,7 +170,6 @@ if __name__ == "__main__":
                                      # adding more checkpoint options
                                      checkpoint_score_attribute=exp_config['checkpoint_score_attribute'],
                                      checkpoint_score_order=exp_config['checkpoint_score_order'],)
-
   # Run Trials
   results = tune.Tuner(
       trainer,

@@ -66,7 +66,7 @@ def get_experiment_config(args, default_config):
         # Env
         "env_name": "meltingpot",
         "env_config": {"substrate": substrate_name, "roles": player_roles, "scaled": scale_factor},
-
+        "gamma": 0.99,
 
         # training
         "seed": args.seed,
@@ -77,6 +77,25 @@ def get_experiment_config(args, default_config):
         "use_new_rl_modules": False,
         "use_new_learner_api": False,
         "framework": args.framework,
+
+        # Exploration
+        # A3C
+        "explore": True,
+        "exploration_config": {
+            "type": "EpsilonGreedy",
+            # Parameters for the Exploration class' constructor:
+            "initial_epsilon": 1.0,  # default is 1.0
+            "final_epsilon": 0.05,  # default is 0.05
+            "epsilon_timesteps": 10e5,  # Timesteps over which to anneal epsilon, defult is int(1e5).
+        },
+        # PPO
+        "entropy_coeff": 0.01,
+        "entropy_coeff_schedule": [
+            # [step, coeff]
+            [0, 0.01],
+            [10e4, 0.001],
+            [10e5, 0.0001]
+        ],
 
         # agent model
         "fcnet_hidden": (4, 4),
@@ -89,6 +108,14 @@ def get_experiment_config(args, default_config):
         "lstm_use_prev_reward": False,
         "lstm_cell_size": 2,
         "shared_policy": False,
+        # adding learning rate and scheduler (linear interpolation)
+        "lr": 5e-4,
+        "lr_schedule": [
+            # [step, lr]
+            [0,5e-4],
+            [10e3, 5e-5],
+            [10e5,1e-5]
+        ],
 
         # experiment trials
         "exp_name": args.exp,
@@ -97,9 +124,9 @@ def get_experiment_config(args, default_config):
                     "training_iteration": 100,
                     #"episode_reward_mean": 100,
         },
-        "num_checkpoints": 5,
-        "checkpoint_interval": 20,
-        "checkpoint_at_end": True,
+        "num_checkpoints": 2,
+        "checkpoint_interval": 10,
+        "checkpoint_at_end": False,
         # more checkpoint options
         # *Best* checkpoints are determined by these params:
         "checkpoint_score_attribute": "episode_reward_mean",
@@ -132,9 +159,23 @@ def get_experiment_config(args, default_config):
     run_configs.log_level = params_dict['logging']
     run_configs.seed = params_dict['seed']
 
+    # Exploration
+    # specified by the algorithm
+    if args.algo == 'a3c':
+        run_configs.explore = params_dict['explore']
+        run_configs.exploration_config = params_dict['exploration_config']
+    elif args.algo == 'ppo':
+        run_configs.entropy_coeff = params_dict['entropy_coeff']
+        run_configs.entropy_coeff_schedule = params_dict['entropy_coeff_schedule']
     # Environment
     run_configs.env = params_dict['env_name']
     run_configs.env_config = params_dict['env_config']
+    run_configs.gamma = params_dict['gamma']
+
+    # Learning Rate
+    run_configs.lr = params_dict['lr']
+    run_configs.lr_schedule = params_dict['lr_schedule']
+
 
     # Setup multi-agent policies. The below code will initialize independent
     # policies for each agent.
@@ -151,8 +192,9 @@ def get_experiment_config(args, default_config):
             action_space=base_env.action_space[f"player_{i}"],
             config={
                 "model": {
-                    "conv_filters": [[16, [8, 8], 1],
-                                    [128, [sprite_x, sprite_y], 1]],
+                    "conv_filters": 
+                                    [[16, [4, 4], 1], # from input 7x7x3 to 4x4x16
+                                    [32, [4, 4], 1]], # from 4x4x16 to 1x1x32 which is input for (64,64) FC layers 
                 },
             })
         player_to_agent[f"player_{i}"] = f"agent_{i}"
