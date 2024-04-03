@@ -71,8 +71,9 @@ def get_experiment_config(args, default_config):
         # training
         "seed": args.seed,
         "rollout_fragment_length": 10,
-        "train_batch_size": 400,
-        "sgd_minibatch_size": 32,
+        "train_batch_size": 2048,
+        "sgd_minibatch_size": 128,
+        "num_sgd_iter": 10,
         "disable_observation_precprocessing": True,
         "use_new_rl_modules": False,
         "use_new_learner_api": False,
@@ -93,40 +94,48 @@ def get_experiment_config(args, default_config):
         "entropy_coeff_schedule": [
             # [step, coeff]
             [0, 0.01],
-            [10e4, 0.001],
-            [10e5, 0.0001]
+            [10e10, 0.001], # almost const
+            # [10e5, 0.0001]
         ],
 
         # agent model
-        "fcnet_hidden": (64, 64),
-        "post_fcnet_hidden": (16,), # not needed
+        # ConvNet
+        "cnn_filters": [[16, [3, 3], 1], [32, [7, 7], 1]], # second one has to be 7x7 for the input to LSTM to work
         "cnn_activation": "relu",
+
+        # MLP FCNet
+        "fcnet_hidden": (64, 64),
         "fcnet_activation": "relu",
-        "post_fcnet_activation": "relu",
+
+        # MLP PostFCNet if needed
+        # "post_fcnet_hidden": (16,), # not needed
+        # "post_fcnet_activation": "relu",
+
+        # LSTM
         "use_lstm": True,
         "lstm_use_prev_action": True,
         "lstm_use_prev_reward": False,
         "lstm_cell_size": 128,
         "shared_policy": False,
-        # "dim": 7,
+        "dim": 7,
         # adding learning rate and scheduler (linear interpolation)
         "lr": 5e-4,
         "lr_schedule": [
             # [step, lr]
             [0,5e-4],
-            [10e3, 5e-5],
-            [10e5,1e-5]
+            [10e10, 5e-5], # almost const
+            # [10e5,1e-5]
         ],
 
         # experiment trials
         "exp_name": args.exp,
         "stopping": {
                     #"timesteps_total": 1000000,
-                    "training_iteration": 100,
+                    "training_iteration": 5000,
                     #"episode_reward_mean": 100,
         },
         "num_checkpoints": 3,
-        "checkpoint_interval": 10,
+        "checkpoint_interval": 50,
         "checkpoint_at_end": False,
         # more checkpoint options
         # *Best* checkpoints are determined by these params:
@@ -152,6 +161,7 @@ def get_experiment_config(args, default_config):
     # Training
     run_configs.train_batch_size = params_dict['train_batch_size']
     run_configs.sgd_minibatch_size = params_dict['sgd_minibatch_size']
+    run_configs.num_sgd_iter = params_dict['num_sgd_iter']
     run_configs.preprocessor_pref = None
     run_configs._disable_preprocessor_api = params_dict['disable_observation_precprocessing']
     run_configs.rl_module(_enable_rl_module_api=params_dict['use_new_rl_modules'])
@@ -184,36 +194,48 @@ def get_experiment_config(args, default_config):
     policies = {}
     player_to_agent = {}
     for i in range(len(player_roles)):
-        rgb_shape = base_env.observation_space[f"player_{i}"]["RGB"].shape
-        sprite_x = rgb_shape[0]
-        sprite_y = rgb_shape[1]
+        # Needed 
+        # rgb_shape = base_env.observation_space[f"player_{i}"]["RGB"].shape
+        # sprite_x = rgb_shape[0]
+        # sprite_y = rgb_shape[1]
 
         policies[f"agent_{i}"] = policy.PolicySpec(
             observation_space=base_env.observation_space[f"player_{i}"],
             action_space=base_env.action_space[f"player_{i}"],
-            config={
-                "model": {
-                    "dim": 7, # input size
-                    "conv_filters": 
-                                    [[16, [4, 4], 1], # from input 7x7x3 to 4x4x16
-                                    [32, [sprite_x, sprite_y], 1],], # from 4x4x16 to 1x1x32 which is input for (64,64) FC layers 
-                },
-            })
+            config={}
+            # moved to param_dict - run_configs.model
+            # {
+            #     "model": {
+            #         "dim": 7, # input size
+            #         "conv_filters": 
+            #                         [[16, [4, 4], 1], # from input 7x7x3 to 7x7x16 (padding)
+            #                         [32, [sprite_x, sprite_y], 1],], # from 7x7x16 to 1x1x32 which is input for (64,64) FC layers 
+            #     },
+            # }
+            )
         player_to_agent[f"player_{i}"] = f"agent_{i}"
 
     run_configs.multi_agent(policies=policies, policy_mapping_fn=(lambda agent_id, *args, **kwargs: 
                                                                   player_to_agent[agent_id]))
     
+    # ConvNet
+    run_configs.model["dim"] = params_dict['dim']
+    run_configs.model["conv_filters"] = params_dict['cnn_filters']
+    run_configs.model["conv_activation"] = params_dict['cnn_activation']
+
+    # MLP FCNet
     run_configs.model["fcnet_hiddens"] = params_dict['fcnet_hidden']
-    run_configs.model["post_fcnet_hiddens"] = params_dict['post_fcnet_hidden'] # not needed
-    run_configs.model["conv_activation"] = params_dict['cnn_activation'] 
     run_configs.model["fcnet_activation"] = params_dict['fcnet_activation']
-    run_configs.model["post_fcnet_activation"] = params_dict['post_fcnet_activation'] # not needed
+
+    # MLP PostFCNet
+    # run_configs.model["post_fcnet_hiddens"] = params_dict['post_fcnet_hidden'] # not needed
+    # run_configs.model["post_fcnet_activation"] = params_dict['post_fcnet_activation'] # not needed
+
+    # LSTM
     run_configs.model["use_lstm"] = params_dict['use_lstm']
     run_configs.model["lstm_use_prev_action"] = params_dict['lstm_use_prev_action']
     run_configs.model["lstm_use_prev_reward"] = params_dict['lstm_use_prev_reward']
     run_configs.model["lstm_cell_size"] = params_dict['lstm_cell_size']
-    # run_configs.model["dim"] = params_dict['dim']
 
     # Experiment Trials
     experiment_configs['name'] = params_dict['exp_name']
@@ -221,9 +243,12 @@ def get_experiment_config(args, default_config):
     experiment_configs['keep'] = params_dict['num_checkpoints']
     experiment_configs['freq'] = params_dict['checkpoint_interval']
     experiment_configs['end'] = params_dict['checkpoint_at_end']
+
     # more checkpoint settings
     experiment_configs['checkpoint_score_attribute'] = params_dict['checkpoint_score_attribute']
     experiment_configs['checkpoint_score_order'] = params_dict['checkpoint_score_order']
+
+    # results directory
     if args.framework == 'tf':
         experiment_configs['dir'] = f"{params_dict['results_dir']}/tf"
     else:
