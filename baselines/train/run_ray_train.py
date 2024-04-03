@@ -106,12 +106,6 @@ if __name__ == "__main__":
 
   args = get_cli_args()
 
-  # Set up Ray. Use local mode for debugging. Ignore reinit error.
-  ray.init(local_mode=args.local, ignore_reinit_error=True)
-
-  # Register meltingpot environment
-  registry.register_env("meltingpot", make_envs.env_creator)
-
   # Initialize default configurations for native RLlib algorithms
   if args.algo == "ppo":
      trainer = "PPO"
@@ -122,9 +116,15 @@ if __name__ == "__main__":
   else:
      print('The selected option is not tested. You may encounter issues if you use the baseline \
            policy configurations with non-tested algorithms')
-
+     
   # Fetch experiment configurations
   configs, exp_config, tune_config = get_experiment_config(args, default_config)
+
+  # Set up Ray. Use local mode for debugging. Ignore reinit error.
+  ray.init(num_cpus=configs.num_cpus,local_mode=args.local, ignore_reinit_error=True)
+
+  # Register meltingpot environment
+  registry.register_env("meltingpot", make_envs.env_creator)
   
   # Ensure GPU is available if set to True
   if configs.num_gpus > 0:

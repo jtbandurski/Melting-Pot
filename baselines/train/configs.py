@@ -60,8 +60,11 @@ def get_experiment_config(args, default_config):
     params_dict = {
 
         # resources
-        "num_rollout_workers": args.num_workers,
+        "num_rollout_workers": args.num_workers, # always a driver process is initiated (1 thread needed for it)
         "num_gpus": args.num_gpus,
+        "num_gpus_per_worker": args.num_gpus/args.num_workers,
+        "num_cpus" : args.num_workers + 1, # parallelize as much as possible, +1 from the driver process
+        "num_cpus_per_worker": 1,
 
         # Env
         "env_name": "meltingpot",
@@ -131,11 +134,11 @@ def get_experiment_config(args, default_config):
         "exp_name": args.exp,
         "stopping": {
                     #"timesteps_total": 1000000,
-                    "training_iteration": 5000,
+                    "training_iteration": 10,
                     #"episode_reward_mean": 100,
         },
         "num_checkpoints": 3,
-        "checkpoint_interval": 50,
+        "checkpoint_interval": 10,
         "checkpoint_at_end": False,
         # more checkpoint options
         # *Best* checkpoints are determined by these params:
@@ -156,6 +159,10 @@ def get_experiment_config(args, default_config):
     # Resources 
     run_configs.num_rollout_workers = params_dict['num_rollout_workers']
     run_configs.num_gpus = params_dict['num_gpus']
+    run_configs.num_gpus_per_worker = params_dict['num_gpus_per_worker']
+    run_configs.num_cpus = params_dict['num_cpus']
+    run_configs.num_cpus_per_worker = params_dict['num_cpus_per_worker']
+
 
 
     # Training
