@@ -121,7 +121,7 @@ if __name__ == "__main__":
   configs, exp_config, tune_config = get_experiment_config(args, default_config)
 
   # Set up Ray. Use local mode for debugging. Ignore reinit error.
-  ray.init(num_cpus=configs.num_cpus,local_mode=args.local, ignore_reinit_error=True)
+  ray.init(num_cpus=configs.num_cpus,num_gpus=configs.num_gpus ,local_mode=args.local, ignore_reinit_error=True)
 
   # Register meltingpot environment
   registry.register_env("meltingpot", make_envs.env_creator)
