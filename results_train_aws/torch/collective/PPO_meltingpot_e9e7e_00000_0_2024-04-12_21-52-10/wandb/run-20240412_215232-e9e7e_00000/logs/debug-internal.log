@@ -1,0 +1,309 @@
+2024-04-12 21:52:32,579 INFO    StreamThr :4897 [internal.py:wandb_internal():86] W&B internal server running at pid: 4897, started at: 2024-04-12 21:52:32.579334
+2024-04-12 21:52:32,581 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status
+2024-04-12 21:52:32,587 INFO    WriterThread:4897 [datastore.py:open_for_write():87] open: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/run-e9e7e_00000.wandb
+2024-04-12 21:52:32,588 DEBUG   SenderThread:4897 [sender.py:send():379] send: header
+2024-04-12 21:52:32,597 DEBUG   SenderThread:4897 [sender.py:send():379] send: run
+2024-04-12 21:52:33,059 INFO    SenderThread:4897 [dir_watcher.py:__init__():211] watching files in: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files
+2024-04-12 21:52:33,059 INFO    SenderThread:4897 [sender.py:_start_run_threads():1124] run started: e9e7e_00000 with start time 1712958752.579986
+2024-04-12 21:52:33,067 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: check_version
+2024-04-12 21:52:33,067 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: check_version
+2024-04-12 21:52:33,165 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: run_start
+2024-04-12 21:52:33,166 DEBUG   HandlerThread:4897 [system_info.py:__init__():26] System info init
+2024-04-12 21:52:33,166 DEBUG   HandlerThread:4897 [system_info.py:__init__():41] System info init done
+2024-04-12 21:52:33,166 INFO    HandlerThread:4897 [system_monitor.py:start():194] Starting system monitor
+2024-04-12 21:52:33,166 INFO    SystemMonitor:4897 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-12 21:52:33,166 INFO    HandlerThread:4897 [system_monitor.py:probe():214] Collecting system info
+2024-04-12 21:52:33,167 INFO    SystemMonitor:4897 [interfaces.py:start():190] Started cpu monitoring
+2024-04-12 21:52:33,167 INFO    SystemMonitor:4897 [interfaces.py:start():190] Started disk monitoring
+2024-04-12 21:52:33,168 INFO    SystemMonitor:4897 [interfaces.py:start():190] Started memory monitoring
+2024-04-12 21:52:33,168 INFO    SystemMonitor:4897 [interfaces.py:start():190] Started network monitoring
+2024-04-12 21:52:33,172 DEBUG   HandlerThread:4897 [system_info.py:probe():150] Probing system
+2024-04-12 21:52:33,175 DEBUG   HandlerThread:4897 [system_info.py:_probe_git():135] Probing git
+2024-04-12 21:52:33,180 DEBUG   HandlerThread:4897 [system_info.py:_probe_git():143] Probing git done
+2024-04-12 21:52:33,180 DEBUG   HandlerThread:4897 [system_info.py:probe():198] Probing system done
+2024-04-12 21:52:33,180 DEBUG   HandlerThread:4897 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-1014-aws-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-04-12T21:52:33.173007', 'startedAt': '2024-04-12T21:52:32.572187', 'docker': None, 'cuda': None, 'args': ('--node-ip-address=172.31.8.71', '--node-manager-port=33323', '--object-store-name=/tmp/ray/session_2024-04-12_21-52-07_084213_4527/sockets/plasma_store', '--raylet-name=/tmp/ray/session_2024-04-12_21-52-07_084213_4527/sockets/raylet', '--redis-address=None', '--temp-dir=/tmp/ray', '--metrics-agent-port=60402', '--logging-rotate-bytes=536870912', '--logging-rotate-backup-count=5', '--gcs-address=172.31.8.71:65264', '--session-name=session_2024-04-12_21-52-07_084213_4527', '--temp-dir=/tmp/ray', '--webui=127.0.0.1:8265', '--startup-token=9', '--worker-launch-time-ms=1712958742872', '--runtime-env-hash=-462829640'), 'state': 'running', 'program': '/home/ubuntu/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/workers/default_worker.py', 'codePathLocal': None, 'codePath': '.venv/lib/python3.10/site-packages/ray/_private/workers/default_worker.py', 'git': {'remote': 'https://github.com/jtbandurski/Melting-Pot', 'commit': 'f51f47cf0d27edecd4a142b9c53f0862e725e2dc'}, 'email': None, 'root': '/home/ubuntu/Melting-Pot', 'host': 'ip-172-31-8-71', 'username': 'ubuntu', 'executable': '/home/ubuntu/Melting-Pot/.venv/bin/python', 'cpu_count': 2, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2813.6447500000004, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2547.765, 'min': 0.0, 'max': 0.0}, {'current': 3100.193, 'min': 0.0, 'max': 0.0}, {'current': 2506.661, 'min': 0.0, 'max': 0.0}, {'current': 3099.96, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 123.86906433105469, 'used': 10.5029296875}}, 'memory': {'total': 15.40927505493164}}
+2024-04-12 21:52:33,180 INFO    HandlerThread:4897 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-12 21:52:33,180 INFO    HandlerThread:4897 [system_monitor.py:probe():227] Publishing system info
+2024-04-12 21:52:33,181 INFO    HandlerThread:4897 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-12 21:52:33,185 DEBUG   SenderThread:4897 [sender.py:send():379] send: files
+2024-04-12 21:52:33,186 INFO    SenderThread:4897 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-12 21:52:33,353 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-12 21:52:33,354 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: python_packages
+2024-04-12 21:52:33,394 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-12 21:52:33,395 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-12 21:52:33,396 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: stop_status
+2024-04-12 21:52:33,662 DEBUG   SenderThread:4897 [sender.py:send():379] send: telemetry
+2024-04-12 21:52:33,663 DEBUG   SenderThread:4897 [sender.py:send():379] send: telemetry
+2024-04-12 21:52:33,663 DEBUG   SenderThread:4897 [sender.py:send():379] send: config
+2024-04-12 21:52:33,752 INFO    wandb-upload_0:4897 [upload_job.py:push():131] Uploaded file /tmp/tmpi4npfzanwandb/cgy7vd6e-wandb-metadata.json
+2024-04-12 21:52:34,063 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-metadata.json
+2024-04-12 21:52:34,063 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/requirements.txt
+2024-04-12 21:52:37,664 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:52:40,514 DEBUG   SenderThread:4897 [sender.py:send():379] send: config
+2024-04-12 21:52:40,555 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-12 21:52:40,578 DEBUG   SenderThread:4897 [sender.py:send():379] send: history
+2024-04-12 21:52:40,597 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: summary_record
+2024-04-12 21:52:40,599 INFO    SenderThread:4897 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-12 21:52:41,061 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-summary.json
+2024-04-12 21:52:43,606 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:52:48,353 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-12 21:52:48,354 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-12 21:52:48,354 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: stop_status
+2024-04-12 21:52:49,583 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:52:53,681 DEBUG   SenderThread:4897 [sender.py:send():379] send: config
+2024-04-12 21:52:53,727 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-12 21:52:53,740 DEBUG   SenderThread:4897 [sender.py:send():379] send: history
+2024-04-12 21:52:53,741 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: summary_record
+2024-04-12 21:52:53,743 INFO    SenderThread:4897 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-12 21:52:54,065 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-summary.json
+2024-04-12 21:52:54,744 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:52:59,745 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:53:03,353 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-12 21:53:03,354 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-12 21:53:03,354 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: stop_status
+2024-04-12 21:53:05,506 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:53:06,070 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/config.yaml
+2024-04-12 21:53:08,272 DEBUG   SenderThread:4897 [sender.py:send():379] send: config
+2024-04-12 21:53:08,315 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-12 21:53:08,325 DEBUG   SenderThread:4897 [sender.py:send():379] send: history
+2024-04-12 21:53:08,327 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: summary_record
+2024-04-12 21:53:08,328 INFO    SenderThread:4897 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-12 21:53:09,071 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-summary.json
+2024-04-12 21:53:11,329 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:53:16,330 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:53:18,354 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-12 21:53:18,354 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-12 21:53:18,354 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: stop_status
+2024-04-12 21:53:21,564 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:53:22,389 DEBUG   SenderThread:4897 [sender.py:send():379] send: config
+2024-04-12 21:53:22,427 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-12 21:53:22,437 DEBUG   SenderThread:4897 [sender.py:send():379] send: history
+2024-04-12 21:53:22,439 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: summary_record
+2024-04-12 21:53:22,440 INFO    SenderThread:4897 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-12 21:53:23,076 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-summary.json
+2024-04-12 21:53:27,442 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:53:32,443 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:53:33,168 DEBUG   SystemMonitor:4897 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-12 21:53:33,169 DEBUG   SenderThread:4897 [sender.py:send():379] send: stats
+2024-04-12 21:53:33,354 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-12 21:53:33,354 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: stop_status
+2024-04-12 21:53:33,355 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-12 21:53:36,442 DEBUG   SenderThread:4897 [sender.py:send():379] send: config
+2024-04-12 21:53:36,484 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-12 21:53:36,495 DEBUG   SenderThread:4897 [sender.py:send():379] send: history
+2024-04-12 21:53:36,497 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: summary_record
+2024-04-12 21:53:36,499 INFO    SenderThread:4897 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-12 21:53:37,083 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-summary.json
+2024-04-12 21:53:37,507 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:53:38,083 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/config.yaml
+2024-04-12 21:53:42,702 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:53:47,703 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:53:48,354 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-12 21:53:48,354 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-12 21:53:48,355 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: stop_status
+2024-04-12 21:53:50,324 DEBUG   SenderThread:4897 [sender.py:send():379] send: config
+2024-04-12 21:53:50,363 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-12 21:53:50,373 DEBUG   SenderThread:4897 [sender.py:send():379] send: history
+2024-04-12 21:53:50,375 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: summary_record
+2024-04-12 21:53:50,377 INFO    SenderThread:4897 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-12 21:53:51,091 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-summary.json
+2024-04-12 21:53:53,379 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:53:58,381 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:54:02,878 DEBUG   SenderThread:4897 [sender.py:send():379] send: config
+2024-04-12 21:54:02,881 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-12 21:54:02,889 DEBUG   SenderThread:4897 [sender.py:send():379] send: history
+2024-04-12 21:54:02,890 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: summary_record
+2024-04-12 21:54:02,892 INFO    SenderThread:4897 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-12 21:54:03,094 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-summary.json
+2024-04-12 21:54:03,170 DEBUG   SenderThread:4897 [sender.py:send():379] send: stats
+2024-04-12 21:54:03,354 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-12 21:54:03,356 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: stop_status
+2024-04-12 21:54:03,359 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-12 21:54:03,524 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:54:08,530 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:54:09,100 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/config.yaml
+2024-04-12 21:54:13,726 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:54:14,544 DEBUG   SenderThread:4897 [sender.py:send():379] send: config
+2024-04-12 21:54:14,587 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-12 21:54:14,597 DEBUG   SenderThread:4897 [sender.py:send():379] send: history
+2024-04-12 21:54:14,599 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: summary_record
+2024-04-12 21:54:14,600 INFO    SenderThread:4897 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-12 21:54:15,102 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-summary.json
+2024-04-12 21:54:18,355 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-12 21:54:18,356 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: stop_status
+2024-04-12 21:54:18,360 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-12 21:54:19,530 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:54:24,531 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:54:26,401 DEBUG   SenderThread:4897 [sender.py:send():379] send: config
+2024-04-12 21:54:26,443 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-12 21:54:26,455 DEBUG   SenderThread:4897 [sender.py:send():379] send: history
+2024-04-12 21:54:26,457 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: summary_record
+2024-04-12 21:54:26,458 INFO    SenderThread:4897 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-12 21:54:27,106 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-summary.json
+2024-04-12 21:54:30,460 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:54:33,171 DEBUG   SenderThread:4897 [sender.py:send():379] send: stats
+2024-04-12 21:54:33,355 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-12 21:54:33,356 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: stop_status
+2024-04-12 21:54:33,359 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-12 21:54:35,527 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:54:37,943 DEBUG   SenderThread:4897 [sender.py:send():379] send: config
+2024-04-12 21:54:37,986 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-12 21:54:37,995 DEBUG   SenderThread:4897 [sender.py:send():379] send: history
+2024-04-12 21:54:37,996 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: summary_record
+2024-04-12 21:54:37,998 INFO    SenderThread:4897 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-12 21:54:38,113 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-summary.json
+2024-04-12 21:54:38,115 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/output.log
+2024-04-12 21:54:38,213 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: log_artifact
+2024-04-12 21:54:38,214 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: log_artifact
+2024-04-12 21:54:39,222 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-12 21:54:39,595 INFO    wandb-upload_7:4897 [upload_job.py:push():89] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmp819evigw
+2024-04-12 21:54:39,601 INFO    wandb-upload_6:4897 [upload_job.py:push():89] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmp91z0xjin
+2024-04-12 21:54:39,609 INFO    wandb-upload_2:4897 [upload_job.py:push():89] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmpi29knajn
+2024-04-12 21:54:39,617 INFO    wandb-upload_0:4897 [upload_job.py:push():89] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmpj_7gz1at
+2024-04-12 21:54:39,662 INFO    wandb-upload_1:4897 [upload_job.py:push():89] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmp2nl0x5um
+2024-04-12 21:54:39,837 INFO    wandb-upload_4:4897 [upload_job.py:push():89] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmp9752bqax
+2024-04-12 21:54:40,114 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/output.log
+2024-04-12 21:54:40,126 INFO    wandb-upload_5:4897 [upload_job.py:push():89] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmps62x344x
+2024-04-12 21:54:40,390 INFO    wandb-upload_3:4897 [upload_job.py:push():89] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmpnwgmx1v_
+2024-04-12 21:54:40,992 INFO    SenderThread:4897 [sender.py:send_request_log_artifact():1456] logged artifact checkpoint_PPO_meltingpot_e9e7e_00000 - {'id': 'QXJ0aWZhY3Q6Nzk0NTgyODg4', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2MjExNzg5MA==', 'latestArtifact': None}}
+2024-04-12 21:54:40,996 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:54:41,174 DEBUG   SenderThread:4897 [sender.py:send():379] send: telemetry
+2024-04-12 21:54:41,174 DEBUG   SenderThread:4897 [sender.py:send():379] send: exit
+2024-04-12 21:54:41,174 INFO    SenderThread:4897 [sender.py:send_exit():586] handling exit code: 0
+2024-04-12 21:54:41,174 INFO    SenderThread:4897 [sender.py:send_exit():588] handling runtime: 125
+2024-04-12 21:54:41,174 INFO    SenderThread:4897 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-12 21:54:41,175 INFO    SenderThread:4897 [sender.py:send_exit():594] send defer
+2024-04-12 21:54:41,175 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: poll_exit
+2024-04-12 21:54:41,175 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:41,175 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-12 21:54:41,176 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:41,176 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-12 21:54:41,176 INFO    SenderThread:4897 [sender.py:transition_state():614] send defer: 1
+2024-04-12 21:54:41,176 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:41,176 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-12 21:54:41,176 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:41,176 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-12 21:54:41,176 INFO    SenderThread:4897 [sender.py:transition_state():614] send defer: 2
+2024-04-12 21:54:41,176 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:41,176 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-12 21:54:41,176 INFO    HandlerThread:4897 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-12 21:54:41,177 DEBUG   SystemMonitor:4897 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-12 21:54:41,177 DEBUG   SystemMonitor:4897 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-12 21:54:41,177 INFO    HandlerThread:4897 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-12 21:54:41,177 INFO    HandlerThread:4897 [interfaces.py:finish():202] Joined disk monitor
+2024-04-12 21:54:41,178 INFO    HandlerThread:4897 [interfaces.py:finish():202] Joined memory monitor
+2024-04-12 21:54:41,178 INFO    HandlerThread:4897 [interfaces.py:finish():202] Joined network monitor
+2024-04-12 21:54:41,178 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:41,178 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-12 21:54:41,178 INFO    SenderThread:4897 [sender.py:transition_state():614] send defer: 3
+2024-04-12 21:54:41,178 DEBUG   SenderThread:4897 [sender.py:send():379] send: stats
+2024-04-12 21:54:41,179 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:41,179 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-12 21:54:41,179 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:41,179 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-12 21:54:41,179 INFO    SenderThread:4897 [sender.py:transition_state():614] send defer: 4
+2024-04-12 21:54:41,179 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:41,179 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-12 21:54:41,179 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:41,179 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-12 21:54:41,179 INFO    SenderThread:4897 [sender.py:transition_state():614] send defer: 5
+2024-04-12 21:54:41,180 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:41,180 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-12 21:54:41,182 DEBUG   SenderThread:4897 [sender.py:send():379] send: summary
+2024-04-12 21:54:41,183 INFO    SenderThread:4897 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-12 21:54:41,183 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:41,183 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-12 21:54:41,183 INFO    SenderThread:4897 [sender.py:transition_state():614] send defer: 6
+2024-04-12 21:54:41,183 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:41,184 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-12 21:54:41,184 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:41,184 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-12 21:54:41,187 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: status_report
+2024-04-12 21:54:41,222 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-12 21:54:41,363 INFO    SenderThread:4897 [sender.py:transition_state():614] send defer: 7
+2024-04-12 21:54:41,363 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: poll_exit
+2024-04-12 21:54:41,363 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:41,363 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-12 21:54:41,364 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:41,364 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-12 21:54:42,037 INFO    SenderThread:4897 [sender.py:transition_state():614] send defer: 8
+2024-04-12 21:54:42,037 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:42,037 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-12 21:54:42,037 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:42,037 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-12 21:54:42,037 INFO    SenderThread:4897 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-12 21:54:42,040 INFO    SenderThread:4897 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-04-12 21:54:42,042 INFO    SenderThread:4897 [job_builder.py:build():431] adding wandb-job metadata file
+2024-04-12 21:54:42,048 INFO    SenderThread:4897 [sender.py:transition_state():614] send defer: 9
+2024-04-12 21:54:42,048 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:42,048 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-12 21:54:42,052 DEBUG   SenderThread:4897 [sender.py:send():379] send: artifact
+2024-04-12 21:54:42,114 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/config.yaml
+2024-04-12 21:54:42,115 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/output.log
+2024-04-12 21:54:42,115 INFO    Thread-12 :4897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-summary.json
+2024-04-12 21:54:42,222 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-12 21:54:42,828 INFO    wandb-upload_7:4897 [upload_job.py:push():89] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmp0ycdg3ch
+2024-04-12 21:54:42,946 INFO    wandb-upload_6:4897 [upload_job.py:push():89] Uploaded file /tmp/tmp_bu83ah5/wandb-job.json
+2024-04-12 21:54:43,868 INFO    SenderThread:4897 [sender.py:send_artifact():1468] sent artifact job-https___github.com_jtbandurski_Melting-Pot_.venv_lib_python3.10_site-packages_ray__private_workers_default_worker.py - {'id': 'QXJ0aWZhY3Q6Nzk0NTgyOTQ0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2MjExNzg5NQ==', 'latestArtifact': None}}
+2024-04-12 21:54:43,868 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:43,868 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-12 21:54:43,868 INFO    SenderThread:4897 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-12 21:54:44,115 INFO    SenderThread:4897 [dir_watcher.py:finish():388] scan: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files
+2024-04-12 21:54:44,115 INFO    SenderThread:4897 [dir_watcher.py:finish():402] scan save: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/requirements.txt requirements.txt
+2024-04-12 21:54:44,116 INFO    SenderThread:4897 [dir_watcher.py:finish():402] scan save: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-metadata.json wandb-metadata.json
+2024-04-12 21:54:44,116 INFO    SenderThread:4897 [dir_watcher.py:finish():402] scan save: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/config.yaml config.yaml
+2024-04-12 21:54:44,118 INFO    SenderThread:4897 [dir_watcher.py:finish():402] scan save: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-summary.json wandb-summary.json
+2024-04-12 21:54:44,118 INFO    SenderThread:4897 [dir_watcher.py:finish():402] scan save: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/output.log output.log
+2024-04-12 21:54:44,118 INFO    SenderThread:4897 [sender.py:transition_state():614] send defer: 10
+2024-04-12 21:54:44,120 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: poll_exit
+2024-04-12 21:54:44,122 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:44,122 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-12 21:54:44,124 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:44,124 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-12 21:54:44,125 INFO    SenderThread:4897 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-12 21:54:44,223 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-12 21:54:44,223 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: poll_exit
+2024-04-12 21:54:44,473 INFO    wandb-upload_0:4897 [upload_job.py:push():131] Uploaded file /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/requirements.txt
+2024-04-12 21:54:44,493 INFO    wandb-upload_4:4897 [upload_job.py:push():131] Uploaded file /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/config.yaml
+2024-04-12 21:54:44,560 INFO    wandb-upload_2:4897 [upload_job.py:push():131] Uploaded file /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/output.log
+2024-04-12 21:54:44,585 INFO    wandb-upload_5:4897 [upload_job.py:push():131] Uploaded file /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/files/wandb-summary.json
+2024-04-12 21:54:44,785 INFO    Thread-11 (_thread_body):4897 [sender.py:transition_state():614] send defer: 11
+2024-04-12 21:54:44,786 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:44,786 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-12 21:54:44,786 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:44,786 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-12 21:54:44,786 INFO    SenderThread:4897 [file_pusher.py:join():178] waiting for file pusher
+2024-04-12 21:54:44,787 INFO    SenderThread:4897 [sender.py:transition_state():614] send defer: 12
+2024-04-12 21:54:44,787 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:44,787 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-12 21:54:44,787 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:44,787 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-12 21:54:44,787 INFO    SenderThread:4897 [file_stream.py:finish():614] file stream finish called
+2024-04-12 21:54:45,224 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-12 21:54:45,254 INFO    SenderThread:4897 [file_stream.py:finish():618] file stream finish is done
+2024-04-12 21:54:45,254 INFO    SenderThread:4897 [sender.py:transition_state():614] send defer: 13
+2024-04-12 21:54:45,255 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: poll_exit
+2024-04-12 21:54:45,255 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:45,255 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-12 21:54:45,255 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:45,255 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-12 21:54:45,255 INFO    SenderThread:4897 [sender.py:transition_state():614] send defer: 14
+2024-04-12 21:54:45,256 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: defer
+2024-04-12 21:54:45,256 DEBUG   SenderThread:4897 [sender.py:send():379] send: final
+2024-04-12 21:54:45,256 INFO    HandlerThread:4897 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-12 21:54:45,256 DEBUG   SenderThread:4897 [sender.py:send():379] send: footer
+2024-04-12 21:54:45,256 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: defer
+2024-04-12 21:54:45,256 INFO    SenderThread:4897 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-12 21:54:45,257 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-12 21:54:45,257 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: poll_exit
+2024-04-12 21:54:45,258 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-12 21:54:45,258 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: server_info
+2024-04-12 21:54:45,259 DEBUG   SenderThread:4897 [sender.py:send_request():406] send_request: server_info
+2024-04-12 21:54:45,302 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-12 21:54:45,304 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-12 21:54:45,374 DEBUG   HandlerThread:4897 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-12 21:54:45,374 INFO    HandlerThread:4897 [handler.py:finish():866] shutting down handler
+2024-04-12 21:54:46,259 INFO    WriterThread:4897 [datastore.py:close():296] close: /home/ubuntu/Melting-Pot/results_train_first_trials/torch/collective/PPO_meltingpot_e9e7e_00000_0_2024-04-12_21-52-10/wandb/run-20240412_215232-e9e7e_00000/run-e9e7e_00000.wandb
+2024-04-12 21:54:46,373 INFO    SenderThread:4897 [sender.py:finish():1546] shutting down sender
+2024-04-12 21:54:46,373 INFO    SenderThread:4897 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-12 21:54:46,373 INFO    SenderThread:4897 [file_pusher.py:join():178] waiting for file pusher
