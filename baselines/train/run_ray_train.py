@@ -1,5 +1,6 @@
 import argparse
 import os
+import datetime
 import ray
 
 
@@ -105,6 +106,13 @@ def get_cli_args():
 if __name__ == "__main__":
 
   args = get_cli_args()
+
+  # Print args changed from script running level
+  print("#"*120)
+  print(f"Current time is: {datetime.datetime.now()}")
+  print(f"Parameters used: substrate {args.exp}, num_workers/cpu {args.num_workers}, num_gpus {args.num_gpus}, seed {args.seed} ")
+  print("#"*120)
+
 
   # Initialize default configurations for native RLlib algorithms
   if args.algo == "ppo":
