@@ -1,0 +1,97 @@
+{
+    "os": "Linux-6.5.0-1016-aws-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-04-14T19:45:59.408969",
+    "startedAt": "2024-04-14T19:45:58.900315",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--node-ip-address=172.31.10.169",
+        "--node-manager-port=37623",
+        "--object-store-name=/tmp/ray/session_2024-04-14_19-45-36_610967_1264/sockets/plasma_store",
+        "--raylet-name=/tmp/ray/session_2024-04-14_19-45-36_610967_1264/sockets/raylet",
+        "--redis-address=None",
+        "--temp-dir=/tmp/ray",
+        "--metrics-agent-port=45578",
+        "--logging-rotate-bytes=536870912",
+        "--logging-rotate-backup-count=5",
+        "--gcs-address=172.31.10.169:50353",
+        "--session-name=session_2024-04-14_19-45-36_610967_1264",
+        "--temp-dir=/tmp/ray",
+        "--webui=127.0.0.1:8265",
+        "--startup-token=17",
+        "--worker-launch-time-ms=1713123952004",
+        "--runtime-env-hash=-462829640"
+    ],
+    "state": "running",
+    "program": "/home/ubuntu/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/workers/default_worker.py",
+    "codePathLocal": null,
+    "codePath": ".venv/lib/python3.10/site-packages/ray/_private/workers/default_worker.py",
+    "git": {
+        "remote": "https://github.com/jtbandurski/Melting-Pot",
+        "commit": "0ea314430df643ab6a1001d996589a638f3a2bf1"
+    },
+    "email": null,
+    "root": "/home/ubuntu/Melting-Pot",
+    "host": "ip-172-31-10-169",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/Melting-Pot/.venv/bin/python3",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3277.157,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3399.806,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2900.096,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3374.494,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.065,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3398.528,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2943.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.66,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.137,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 123.86906433105469,
+            "used": 12.263992309570312
+        }
+    },
+    "memory": {
+        "total": 15.244232177734375
+    }
+}
