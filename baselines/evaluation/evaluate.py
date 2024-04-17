@@ -161,7 +161,7 @@ if __name__ == "__main__":
   # Save the results to a csv file
   # if the target directory does not exist, create it
   try:
-    os.makedirs(f'evaluations/{scenario}/{args.config_dir}/')
+    os.makedirs(f'{args.config_dir}/')
   except FileExistsError:
-    results.to_csv(f'evaluations/{scenario}/{args.config_dir}/evaluation.csv')
+    results.to_csv(f'{args.config_dir}/evaluation.csv')
 
