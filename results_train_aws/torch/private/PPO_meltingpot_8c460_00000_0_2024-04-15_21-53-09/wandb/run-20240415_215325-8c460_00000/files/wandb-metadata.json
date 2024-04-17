@@ -1,0 +1,137 @@
+{
+    "os": "Linux-6.5.0-1016-aws-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-04-15T21:53:25.772716",
+    "startedAt": "2024-04-15T21:53:25.246821",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--node-ip-address=172.31.30.128",
+        "--node-manager-port=36591",
+        "--object-store-name=/tmp/ray/session_2024-04-15_21-53-05_713065_1361/sockets/plasma_store",
+        "--raylet-name=/tmp/ray/session_2024-04-15_21-53-05_713065_1361/sockets/raylet",
+        "--redis-address=None",
+        "--temp-dir=/tmp/ray",
+        "--metrics-agent-port=48657",
+        "--logging-rotate-bytes=536870912",
+        "--logging-rotate-backup-count=5",
+        "--gcs-address=172.31.30.128:62936",
+        "--session-name=session_2024-04-15_21-53-05_713065_1361",
+        "--temp-dir=/tmp/ray",
+        "--webui=127.0.0.1:8265",
+        "--startup-token=17",
+        "--worker-launch-time-ms=1713217999485",
+        "--runtime-env-hash=-462829640"
+    ],
+    "state": "running",
+    "program": "/home/ubuntu/Melting-Pot/.venv/lib/python3.10/site-packages/ray/_private/workers/default_worker.py",
+    "codePathLocal": null,
+    "codePath": ".venv/lib/python3.10/site-packages/ray/_private/workers/default_worker.py",
+    "git": {
+        "remote": "https://github.com/jtbandurski/Melting-Pot",
+        "commit": "0ea314430df643ab6a1001d996589a638f3a2bf1"
+    },
+    "email": null,
+    "root": "/home/ubuntu/Melting-Pot",
+    "host": "ip-172-31-30-128",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/Melting-Pot/.venv/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3215.7550625,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2999.994,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3399.856,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2999.994,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.135,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2999.994,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3398.989,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.705,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2999.994,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3399.848,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2999.994,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.081,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2999.994,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3039.411,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3416.77,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2999.994,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3424.722,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 123.86906433105469,
+            "used": 12.564163208007812
+        }
+    },
+    "memory": {
+        "total": 30.42192840576172
+    }
+}
