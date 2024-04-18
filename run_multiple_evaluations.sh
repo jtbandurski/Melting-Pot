@@ -20,6 +20,6 @@ for seed in "${seeds[@]}"; do
         cmd="screen -L -Logfile ${logfile} python baselines/evaluation/evaluate.py --tragedy_test=True --num_episodes=200 --config_dir=${config_dir}"
 
         # Run the command in a separate screen session
-        $cmd
+        $cmd &
     done
 done
