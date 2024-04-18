@@ -17,7 +17,7 @@ for seed in "${seeds[@]}"; do
         logfile="screenlogs/evaluation_seed_${seed}_${param}"
 
         # Construct the screen command
-        cmd="screen -L -Logfile ${logfile} python baselines/evaluation/evaluate.py --tragedy_test=True --num_episodes=1 --config_dir=${config_dir}"
+        cmd="screen -d -m -L -Logfile ${logfile} python baselines/evaluation/evaluate.py --tragedy_test=True --num_episodes=1 --config_dir=${config_dir}"
 
         # Run the command in a separate screen session
         $cmd &
