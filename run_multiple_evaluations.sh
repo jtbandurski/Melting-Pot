@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Array of seeds
-seeds=(1234 1235)
+seeds=(123 1234 12345 123456 1234567)
 
 # Array of parameter combinations
-params=("Pa0_Ca0" "Pa0_Ca1")
+params=("Pa0_Ca0" "Pa0_Ca1" "Pa1_Ca0" "Pa1_Ca1")
 
 # Loop through seeds
 for seed in "${seeds[@]}"; do
@@ -17,7 +17,7 @@ for seed in "${seeds[@]}"; do
         logfile="screenlogs/evaluation_seed_${seed}_${param}"
 
         # Construct the screen command
-        cmd="screen -L -Logfile ${logfile} python baselines/evaluation/evaluate.py --tragedy_test=True --num_episodes=1 --config_dir=${config_dir}"
+        cmd="screen -L -Logfile ${logfile} python baselines/evaluation/evaluate.py --tragedy_test=True --num_episodes=200 --config_dir=${config_dir}"
 
         # Run the command in a separate screen session
         $cmd
