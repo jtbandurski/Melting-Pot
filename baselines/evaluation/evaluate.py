@@ -60,7 +60,7 @@ def run_evaluation(args):
   scaled = configs['env_config']['scaled']
 
   if args.create_videos:
-    video_dir = f"evaluations/{scenario}/{args.config_dir}/"
+    video_dir = f"{args.config_dir}/videos/"
     # if the target directory does not exist, create it
     try:
       os.makedirs(video_dir)
@@ -69,7 +69,7 @@ def run_evaluation(args):
   else:
     video_dir = None
     
-  policies_path = args.policies_dir
+  policies_path = f"{args.config_dir}/policies/"
   roles = configs['env_config']['roles']
   policy_ids = [f"agent_{i}" for i in range(len(roles))]
   names_by_role = defaultdict(list)
@@ -122,11 +122,11 @@ if __name__ == "__main__":
       help="Directory where your experiment config (params.json) is located",
   )
 
-  parser.add_argument(
-      "--policies_dir",
-      type=str,
-      help="Directory where your trained polcies are located",
-  )
+  # parser.add_argument(
+  #     "--policies_dir",
+  #     type=str,
+  #     help="Directory where your trained polcies are located",
+  # )
 
   parser.add_argument(
       "--create_videos",
