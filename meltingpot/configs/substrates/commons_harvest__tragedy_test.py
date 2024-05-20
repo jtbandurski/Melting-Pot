@@ -406,11 +406,13 @@ def create_avatar_object(player_idx: int,
                   "renderMode": "ascii_shape",
                   "spriteNames": [source_sprite_self],
                   "spriteShapes": [shapes.CUTE_AVATAR],
+                 "palettes": [shapes.get_palette(
+                     colors.human_readable[player_idx])],
                 # for training we want the agents to always see the other
                 # player as the same colour independent of player_idx
-                #  "palettes": [shapes.get_palette(
-                #      colors.human_readable[player_idx])],
-                  "palettes": [shapes.get_palette((150, 100, 50))],
+                # however this is test substarte - we want to see the differences
+                # player0 is blue and player1 is purple
+                # "palettes": [shapes.get_palette((150, 100, 50))],
                   "noRotates": [True]
               }
           },
@@ -474,10 +476,10 @@ def create_avatar_objects(num_players):
         spawn_group = spawn_groups[random_number]
     else:
         spawn_group = spawn_groups[1 - random_number]
-
+    # if player_idx == 0:
     game_object = create_avatar_object(player_idx,
-                                       TARGET_SPRITE_SELF,
-                                       spawn_group=spawn_group)
+                                    TARGET_SPRITE_SELF,
+                                    spawn_group=spawn_group)
     avatar_objects.append(game_object)
 
   return avatar_objects
